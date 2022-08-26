@@ -1,0 +1,9 @@
+.rebuses_container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 300px;
+  height: 400px;
+  box-shadow: 2px 2px orange, -2px -2px orange;
+  border-radius: 20px;
+  background: #fff;
+}
