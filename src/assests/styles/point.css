@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script:wght@400;600;700&display=swap');
+
+.point{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  font-size: 20px;
+  font-family: 'Alfa Slab One', cursive;
+  color: #fff;
+}

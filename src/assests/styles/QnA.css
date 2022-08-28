@@ -1,0 +1,16 @@
+.QnA{
+  display: flex;
+  flex-flow: column wrap;
+  height: 90%;
+  background: whitesmoke;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 0 0 0;
+}
+.pages{
+  align-self: center;
+  background: #1c2c1c;
+  border-radius: 20px;
+  color: #fff;
+  width: 70%;
+  text-align: center;
+}
