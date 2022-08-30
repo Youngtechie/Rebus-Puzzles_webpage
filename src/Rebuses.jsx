@@ -2,12 +2,17 @@
 const rebuses = [{
   pattern:`Wow + &#128516`,
   answer:" forget ",
-  hint: " A verb ",
+  hint: "A england",
 },
 {
   pattern: `OH + &#128516`,
   answer:" forget ",
-  hint: " A verb ",
+  hint: " A adverb ",
+},
+{
+  pattern: `Bolu + &#128516`,
+  answer:" Ohhhh ",
+  hint: " A preposition ",
 }
 ]
 

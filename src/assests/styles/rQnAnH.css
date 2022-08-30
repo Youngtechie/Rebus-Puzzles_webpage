@@ -53,6 +53,9 @@
   width: 41%;
 }
 .RQnAnH .hint{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   height: 15%;
   font-size: 12px;
