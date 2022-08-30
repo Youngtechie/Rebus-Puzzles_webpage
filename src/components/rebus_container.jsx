@@ -65,6 +65,30 @@ export default function RebusesContainer(){
     document.querySelector('.hint p').style.display = 'block'
     }
   }
+
+  function whitespaces(value){
+    return value != ' ' || value != ' '
+  }
+  //function for the submit button
+  let Submit = (x) => {
+    x.preventDefault()
+    let ansV = document.querySelector('.rebusAns').value
+    let rebansL = rebusAnswer.toLowerCase()
+    let ansL = ansV.toLowerCase()
+    let rebansS = rebansL.split('')
+    let ansVS = ansL.split('')
+    let rebansF = rebansS.filter(whitespaces)
+    let ansF = ansVS.filter(whitespaces)
+    let ansJ = ansF.join("")
+    let rebansJ = rebansF.join("")
+    if(ansJ == rebansJ){
+      alert("You are good champ")
+    }
+    else{
+      alert("Try again champ")
+
+    }
+  }
   
   // Page rendering
   return ( 
@@ -96,7 +120,7 @@ export default function RebusesContainer(){
                 <input type="text" className="rebusAns"/>
               
                 <section className="btns">
-                  <button type="button" className='btn' id='btnsumbit' onClick={Btnfunctions}> Submit </button>
+                  <button type="button" className='btn' id='btnsumbit' onClick={Submit}> Submit </button>
                   <button type="button" className='btn' id='btnreset' onClick={Btnfunctions}> Reset </button>
                 </section>
               
