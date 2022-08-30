@@ -47,13 +47,22 @@ export default function RebusesContainer(){
     }
   }
     
-  // function for the hint buttons
+  // function for the hint button
   let hintbtn = (x) => {
     x.preventDefault()
     let hintp = document.querySelector('.hint p').style.display
-    if(point > 0 && hintp == 'none'){
-      setPoint(prev => prev - 50)
+    if(hintp == 'none'){
       document.querySelector('.hint p').style.display = 'block'
+    }
+  }
+  //function for the getAnswer button
+  let markbtn = (x) => {
+    x.preventDefault()
+    let hintp = document.querySelector('.hint p').style.display
+    if(point > 0 && hintp == 'none' ){
+    setPoint(prev => prev - 200)
+    document.querySelector('.rebusAns').value = rebusAnswer
+    document.querySelector('.hint p').style.display = 'block'
     }
   }
   
@@ -64,7 +73,7 @@ export default function RebusesContainer(){
         <section className="Name">ReBuS</section>
         <section className='icons'>
           <img src="/images/hint.png" className='hintbtn' onClick={hintbtn}/>
-          <img src="/images/checkAnswer.png" className='markbtn' onClick={Btnfunctions}/>
+          <img src="/images/checkAnswer.png" className='markbtn' onClick={markbtn}/>
         </section>
       </header>
 

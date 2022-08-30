@@ -2,11 +2,7 @@ function Btnfunctions(){
 
 
 
-let markbtn = document.querySelector(".markbtn");
-markbtn.addEventListener("click", (x) => {
-    x.preventDefault()
-    console.log(`&#123534`)
-})
+
 
 let Submit = document.querySelector("#btnsumbit");
 Submit.addEventListener("click", (x) => {
