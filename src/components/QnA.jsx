@@ -17,7 +17,6 @@ export default function QnA() {
 
   const handlerprev = (x) => {
     x.preventDefault()
-
     if(counter > 1){
       setCounter(prev => prev - 1)
       setPage(prev => prev - 1)
@@ -26,11 +25,10 @@ export default function QnA() {
 
   const handlernxt = (x) => {
     x.preventDefault()
-
     if(counter < rebuses.length){
       setCounter(prev => prev + 1)
       setPage(prev => prev + 1)
-    }  
+    }
   }
 function rebusInput() {
   return {__html: rebus };
@@ -51,7 +49,7 @@ function rebusInput() {
               <button type="button" className='btn' id='btnsumbit' onClick={Btnfunctions}> Submit </button>
               <button type="button" className='btn' id='btnreset' onClick={Btnfunctions}> Reset </button>
             </section>
-            <section className='hint'>{rebusHint}</section>
+            <section className='hint'><p>{rebusHint}</p></section>
           </section>
         </section>
         <img src='/images/arrow.png' className='nxt' onClick={handlernxt}/>
