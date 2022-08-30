@@ -1,21 +1,17 @@
 import '../assests/styles/rQnAnH.css'
-import rebuses from '../Rebuses.jsx'
+import Btnfunctions from "./btn_functions"
 
 export default function RQnAnH(){
-  const final = rebuses.map(rebus => {
   return (
     <section className="RQnAnH">
       <section className="rebusQues">
-        {rebus.rebus}
       </section>
       <input type="text" className="rebusAns"/>
       <section className="btns">
-        <button type="button" className='btn'> Submit </button>
-        <button type="button" className='btn'> Reset </button>
+        <button type="button" className='btn' id='btnsumbit' onClick={Btnfunctions}> Submit </button>
+        <button type="button" className='btn' id='btnreset' onClick={Btnfunctions}> Reset </button>
       </section>
-      <section className='hint'>Ade is sa mdndmn ans mnss kndd kd d,dd kjd, d,d d,j,d ddkd dkdk dkjd dkjd kjdj kjd kd ld,o dm, dld, dk dk</section>
+      <section className='hint'></section>
     </section>
   )
-  })
-  return final;
 }
