@@ -1,10 +1,6 @@
 function Btnfunctions(){
 
-let hintbtn = document.querySelector(".hint");
-hintbtn.addEventListener("click", (x) => {
-    x.preventDefault()
-    
-})
+
 
 let markbtn = document.querySelector(".markbtn");
 markbtn.addEventListener("click", (x) => {
