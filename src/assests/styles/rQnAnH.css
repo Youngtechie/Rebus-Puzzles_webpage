@@ -34,7 +34,7 @@
   display: flex;
   flex-flow: row wrap;
   height: 30%;
-  width: 70%;
+  width: 90%;
   align-items: center;
   justify-content: space-around;
 }

@@ -8,7 +8,6 @@ import '../assests/styles/rQnAnH.css'
 import '../assests/styles/footer.css'
 import { useState } from "react"
 import rebuses from '../Rebuses'
-import Btnfunctions from './btn_functions'
 
 
 export default function RebusesContainer(){
@@ -67,8 +66,9 @@ export default function RebusesContainer(){
   }
 
   function whitespaces(value){
-    return value != ' ' || value != ' '
+    return value != ' '
   }
+
   //function for the submit button
   let Submit = (x) => {
     x.preventDefault()
@@ -88,6 +88,12 @@ export default function RebusesContainer(){
       alert("Try again champ")
 
     }
+  }
+
+  //function for reset button
+  let Reset = (x) => {
+    x.preventDefault()
+    document.querySelector('.rebusAns').value = ''
   }
   
   // Page rendering
@@ -121,7 +127,7 @@ export default function RebusesContainer(){
               
                 <section className="btns">
                   <button type="button" className='btn' id='btnsumbit' onClick={Submit}> Submit </button>
-                  <button type="button" className='btn' id='btnreset' onClick={Btnfunctions}> Reset </button>
+                  <button type="button" className='btn' id='btnreset' onClick={Reset}> Reset </button>
                 </section>
               
                 <section className='hint'><p style={{display: "none"}}>{rebusHint}</p></section>
