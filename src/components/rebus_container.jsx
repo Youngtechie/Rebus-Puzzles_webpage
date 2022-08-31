@@ -6,7 +6,7 @@ import '../assests/styles/QnA.css'
 import '../assests/styles/rebusSection.css'
 import '../assests/styles/rQnAnH.css'
 import '../assests/styles/footer.css'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import rebuses from '../Rebuses'
 
 
@@ -15,6 +15,7 @@ export default function RebusesContainer(){
   const  [counter, setCounter] = useState(1)
   const [page, setPage] = useState(0)
   const [point, setPoint] = useState(1000)
+  const [anim, setAnim] = useState(false)
   let rebus = rebuses[page].pattern
   let rebusAnswer = rebuses[page].answer
   let rebusHint = rebuses[page].hint
@@ -31,6 +32,7 @@ export default function RebusesContainer(){
       setCounter(prev => prev - 1)
       setPage(prev => prev - 1)
       document.querySelector('.hint p').style.display = 'none'
+      document.querySelector(".hint").style.backgroundColor = 'inherit'
       document.querySelector('.rebusAns').value = ""
     }
   }
@@ -42,6 +44,7 @@ export default function RebusesContainer(){
       setCounter(prev => prev + 1)
       setPage(prev => prev + 1)
       document.querySelector('.hint p').style.display = 'none'
+      document.querySelector(".hint").style.backgroundColor = 'inherit'
       document.querySelector('.rebusAns').value = ""
     }
   }
@@ -52,16 +55,19 @@ export default function RebusesContainer(){
     let hintp = document.querySelector('.hint p').style.display
     if(hintp == 'none'){
       document.querySelector('.hint p').style.display = 'block'
+      document.querySelector(".hint").style.backgroundColor = '#fff'
     }
   }
   //function for the getAnswer button
   let markbtn = (x) => {
     x.preventDefault()
     let hintp = document.querySelector('.hint p').style.display
-    if(point > 0 && hintp == 'none' ){
+    let rebA =  document.querySelector('.rebusAns')
+    if(point > 0 && rebA.value != rebusAnswer ){
     setPoint(prev => prev - 200)
-    document.querySelector('.rebusAns').value = rebusAnswer
+    rebA.value = rebusAnswer
     document.querySelector('.hint p').style.display = 'block'
+    document.querySelector(".hint").style.backgroundColor = '#fff'
     }
   }
 
@@ -81,19 +87,33 @@ export default function RebusesContainer(){
     let ansF = ansVS.filter(whitespaces)
     let ansJ = ansF.join("")
     let rebansJ = rebansF.join("")
+
+    let result = document.querySelector("#result")
+    let resultP = document.querySelector("#result p")
+    let resultImg = document.querySelector("#result img")
+
     if(ansJ == rebansJ){
-      alert("You are good champ")
+      resultP.innerHTML = "You are great Champ!! &#128525;"
+      resultImg.setAttribute("src", "/images/correct.png")
     }
     else{
-      alert("Try again champ")
-
+      resultP.innerHTML = "Try again Champ &#128522;"
     }
+
+    setTimeout(() => {
+      result.setAttribute('style', 'visibility: visible;')
+    }, 0);
+    setTimeout(() => {
+      result.setAttribute('style', 'visibility: hidden;')
+    }, 5000);
   }
 
   //function for reset button
   let Reset = (x) => {
     x.preventDefault()
     document.querySelector('.rebusAns').value = ''
+    document.querySelector('.hint p').style.display = 'none'
+    document.querySelector(".hint").style.backgroundColor = 'inherit'
   }
   
   // Page rendering
@@ -126,7 +146,7 @@ export default function RebusesContainer(){
                 <input type="text" className="rebusAns"/>
               
                 <section className="btns">
-                  <button type="button" className='btn' id='btnsumbit' onClick={Submit}> Submit </button>
+                  <button type="button" className={ 'btn'} id='btnsumbit' onClick={Submit}> Submit </button>
                   <button type="button" className='btn' id='btnreset' onClick={Reset}> Reset </button>
                 </section>
               

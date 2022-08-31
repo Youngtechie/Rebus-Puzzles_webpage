@@ -1,0 +1,28 @@
+#result{
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    background-color: green;
+    top: 35%;
+    visibility: hidden;
+}
+#result p{
+    
+    font-weight: 900;
+    font-size: small;
+}
+#result img{
+    width: 25%;
+    height: 40%;
+    margin-bottom: 20px;
+}
+.show{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
+}
