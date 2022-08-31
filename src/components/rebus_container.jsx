@@ -6,7 +6,7 @@ import '../assests/styles/QnA.css'
 import '../assests/styles/rebusSection.css'
 import '../assests/styles/rQnAnH.css'
 import '../assests/styles/footer.css'
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import rebuses from '../Rebuses'
 
 
@@ -15,7 +15,6 @@ export default function RebusesContainer(){
   const  [counter, setCounter] = useState(1)
   const [page, setPage] = useState(0)
   const [point, setPoint] = useState(1000)
-  const [anim, setAnim] = useState(false)
   let rebus = rebuses[page].pattern
   let rebusAnswer = rebuses[page].answer
   let rebusHint = rebuses[page].hint
@@ -97,14 +96,17 @@ export default function RebusesContainer(){
       resultImg.setAttribute("src", "/images/correct.png")
     }
     else{
-      resultP.innerHTML = "Try again Champ &#128522;"
+      resultP.innerHTML = "You can try again Champ &#128522;"
+      resultImg.setAttribute("src", "/images/incorrect.png")
     }
 
     setTimeout(() => {
       result.setAttribute('style', 'visibility: visible;')
+      document.querySelector('.result_container').setAttribute("style", "display: flex")
     }, 0);
     setTimeout(() => {
       result.setAttribute('style', 'visibility: hidden;')
+      document.querySelector('.result_container').setAttribute("style", "display: none")
     }, 5000);
   }
 

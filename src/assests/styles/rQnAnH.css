@@ -61,7 +61,7 @@
   font-size: 12px;
   overflow: auto;
   text-align: center;
-  background: white;
+  background: inherit;
   border-radius: 10px;
 }
 ::-webkit-scrollbar{
