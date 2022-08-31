@@ -80,18 +80,14 @@ export default function RebusesContainer(){
     let ansV = document.querySelector('.rebusAns').value
     let rebansL = rebusAnswer.toLowerCase()
     let ansL = ansV.toLowerCase()
-    let rebansS = rebansL.split('')
-    let ansVS = ansL.split('')
-    let rebansF = rebansS.filter(whitespaces)
-    let ansF = ansVS.filter(whitespaces)
-    let ansJ = ansF.join("")
-    let rebansJ = rebansF.join("")
-
+    let rebansS = rebansL.trim()
+    let ansVS = ansL.toString().trim()
+    
     let result = document.querySelector("#result")
     let resultP = document.querySelector("#result p")
     let resultImg = document.querySelector("#result img")
 
-    if(ansJ == rebansJ){
+    if(ansVS == rebansS){
       resultP.innerHTML = "You are great Champ!! &#128525;"
       resultImg.setAttribute("src", "/images/correct.png")
       setPoint(prev => prev + 200)
