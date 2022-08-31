@@ -1,5 +1,4 @@
 .rebuses_container{
-  position: relative;
   display: flex;
   flex-flow: column wrap;
   width: 300px;

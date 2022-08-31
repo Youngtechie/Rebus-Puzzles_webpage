@@ -8,32 +8,27 @@
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  background-color: inherit;
 }
 #result{
-    display: relative;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     height: 200px;
     width: 300px;
-    top: 0%;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(148,187,233,1) 100%);
     visibility: hidden;
 }
 #result p{
     font-weight: 900;
-    font-size: 20px;
+    font-size: 15px;
   
 }
 #result img{
-    width: 25%;
-    height: 40%;
+    width: 40%;
+    height: 50%;
     margin-bottom: 20px;
-}
-#result img[src="/images/incorrect.png"]{
-  width: 40%;
-  height: 50%;
 }
 .show{
     visibility: visible;

@@ -15,9 +15,9 @@ export default function RebusesContainer(){
   const  [counter, setCounter] = useState(1)
   const [page, setPage] = useState(0)
   const [point, setPoint] = useState(1000)
-  let rebus = rebuses[page].pattern
-  let rebusAnswer = rebuses[page].answer
-  let rebusHint = rebuses[page].hint
+  var rebus = rebuses[page].pattern
+  var rebusAnswer = rebuses[page].answer
+  var rebusHint = rebuses[page].hint
 
   // function for the render rebus pattern as innerHTML
   function rebusInput() {
@@ -94,6 +94,14 @@ export default function RebusesContainer(){
     if(ansJ == rebansJ){
       resultP.innerHTML = "You are great Champ!! &#128525;"
       resultImg.setAttribute("src", "/images/correct.png")
+      setPoint(prev => prev + 200)
+      if(counter < rebuses.length){
+      setCounter(prev => prev + 1)
+      setPage(prev => prev + 1)
+      document.querySelector('.hint p').style.display = 'none'
+      document.querySelector(".hint").style.backgroundColor = 'inherit'
+      document.querySelector('.rebusAns').value = ""
+      }
     }
     else{
       resultP.innerHTML = "You can try again Champ &#128522;"

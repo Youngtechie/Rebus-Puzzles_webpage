@@ -13,3 +13,6 @@ body{
   font-family: Arial;
   background: grey;
 }
+#root{
+  position: relative;
+}
