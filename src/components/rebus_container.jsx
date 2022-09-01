@@ -11,7 +11,7 @@ import rebuses from '../Rebuses'
 
 
 export default function RebusesContainer(){
-// declarations
+  // declarations
   const  [counter, setCounter] = useState(1)
   const [page, setPage] = useState(0)
   const [point, setPoint] = useState(1000)
@@ -46,6 +46,28 @@ export default function RebusesContainer(){
       document.querySelector(".hint").style.backgroundColor = 'inherit'
       document.querySelector('.rebusAns').value = ""
     }
+    if(counter == rebuses.length){
+      let res = document.querySelector("#result")
+      let resP = document.querySelector("#result p")
+      let resImg = document.querySelector("#result img")
+
+      
+      resP.innerHTML = "That's all Champ &#128076;"
+      resP.style.color = "white"
+
+      setTimeout(() => {
+        res.setAttribute('style', 'visibility: visible;')
+        resImg.remove()
+        document.querySelector('.result_container').setAttribute("style", "display: flex")
+      }, 0);
+      setTimeout(() => {
+        res.setAttribute('style', 'visibility: hidden;')
+        res.appendChild(resImg)
+        res.appendChild(resP)
+        document.querySelector('.result_container').setAttribute("style", "display: none")
+      }, 4000);
+
+    }
   }
     
   // function for the hint button
@@ -53,6 +75,7 @@ export default function RebusesContainer(){
     x.preventDefault()
     let hintp = document.querySelector('.hint p').style.display
     if(hintp == 'none'){
+      setPoint(prev => prev - 50)
       document.querySelector('.hint p').style.display = 'block'
       document.querySelector(".hint").style.backgroundColor = '#fff'
     }
@@ -88,7 +111,7 @@ export default function RebusesContainer(){
     let resultImg = document.querySelector("#result img")
 
     if(ansVS == rebansS){
-      resultP.innerHTML = "You are great Champ!! &#128525;"
+      resultP.innerHTML = "You are great Champ!! &#128525; <br/><br/> Continue &#9889; "
       resultImg.setAttribute("src", "/images/correct.png")
       setPoint(prev => prev + 200)
       if(counter < rebuses.length){
@@ -97,6 +120,9 @@ export default function RebusesContainer(){
       document.querySelector('.hint p').style.display = 'none'
       document.querySelector(".hint").style.backgroundColor = 'inherit'
       document.querySelector('.rebusAns').value = ""
+      }
+      if(counter == rebuses.length){
+        resultP.innerHTML = "You are great Champ!! &#128525; <br/><br/> Finished!! &#11088;"
       }
     }
     else{
@@ -111,7 +137,7 @@ export default function RebusesContainer(){
     setTimeout(() => {
       result.setAttribute('style', 'visibility: hidden;')
       document.querySelector('.result_container').setAttribute("style", "display: none")
-    }, 5000);
+    }, 4000);
   }
 
   //function for reset button

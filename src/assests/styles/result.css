@@ -23,7 +23,8 @@
 #result p{
     font-weight: 900;
     font-size: 15px;
-  
+    text-align: center;
+    color: white;
 }
 #result img{
     width: 40%;

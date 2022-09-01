@@ -1,19 +1,24 @@
 
 const rebuses = [{
-  pattern:`Wow + &#128516`,
+  pattern:`get + get + get + get`,
   answer:" forget ",
-  hint: "A england",
+  hint: "A verb",
 },
 {
-  pattern: `OH + &#128516`,
-  answer:" forget ",
-  hint: " A adverb ",
+  pattern: `&#128514 + gas`,
+  answer:" laughing gas ",
+  hint: "A popular name for 'Nitrous Oxide'",
 },
 {
-  pattern: `Bolu + &#128516`,
-  answer:" Ohhhh ",
-  hint: " A preposition ",
-}
+  pattern: `&#128065 + &#128151 + U`,
+  answer:" i love you",
+  hint: " An affirmation of affection or deep caring, especially to a family member. ",
+},
+{
+  pattern: `Travel / C`,
+  answer:" Travel Oversea",
+  hint: " Beyond the boundaries of one's country ",
+},
 ]
 
 /** Don't edit this**/
