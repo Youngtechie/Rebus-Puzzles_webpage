@@ -7,7 +7,7 @@
 - [How to contribute](#How-to-Contribute)
   - [Fork this repository](#Fork-this-repository)
   - [Clone this repository to Vscode](#Clone-this-repository-to-Vscode)
-    - [Import the forked repository to Replit](#Import-the-forked repository-to-Replit)
+    - [Import from Github to Replit](#Import-from-Github-to-Replit)
   - [Make changes](#Make-changes)
     - [See your changes](#See-your-changes)
       - [Check changes on Vscode](#Check-on-Vscode)
@@ -49,7 +49,7 @@ where `this-is-you` is your Github username.
 
 :bulb: You can also import from Github to Replit.
 
-### Import the forked repository to Replit
+### Import from Github to Replit
 
 ## Make changes and commit on VScode
 
