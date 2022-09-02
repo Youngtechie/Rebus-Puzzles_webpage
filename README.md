@@ -26,7 +26,7 @@ If you don't have git on your machine, [install it](https://help.github.com/arti
 
 Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
 
-![For this repo](./public/images/1.png)
+![For this repo](./screenshots/1.png)
 
 ## Clone this repository to Vscode
 
