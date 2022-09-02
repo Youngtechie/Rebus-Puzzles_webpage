@@ -51,7 +51,7 @@ where `this-is-you` is your Github username.
 
 ### Import from Github to Replit
 
-## Make changes and commit on VScode
+## Make changes
 
 Now click on the src folder and open `Rebuses.jsx` file in a text editor, add your own rebus to it. Don't add it at the beginning or end of the file. Put it anywhere in between. Now, save the file.
 
