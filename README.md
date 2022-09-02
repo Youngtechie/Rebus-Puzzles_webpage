@@ -26,6 +26,8 @@ If you don't have git on your machine, [install it](https://help.github.com/arti
 
 Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
 
+![For this repo](/images/1.png)
+
 ## Clone this repository to Vscode
 
 Now clone the forked repository to your machine. Go to your Github account, open the forked repository, click on the button then click the _copy to clipboard_ icon.
@@ -69,6 +71,18 @@ Now click on the src folder and open `Rebuses.jsx` file in a text editor, add yo
 ### Check changes on Vscode
 
 Open a terminal, change directory to the cloned repo and run this command:
+
+```
+npm run dev
+```
+
+If you got this warning `vite is not recognized as an internal or external command`, run this command with internet connection to install vite:
+
+ ```
+ npm i vite
+ ```
+
+After the installation is successful, run this command again:
 
 ```
 npm run dev
