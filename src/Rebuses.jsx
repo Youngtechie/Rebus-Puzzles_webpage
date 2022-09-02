@@ -4,6 +4,7 @@ const rebuses = [{
   answer:" forget ",
   hint: "A verb",
 },
+// Add your rebuses within here
 {
   pattern: `&#128514 + gas`,
   answer:" laughing gas ",
@@ -14,6 +15,7 @@ const rebuses = [{
   answer:" i love you",
   hint: " An affirmation of affection or deep caring, especially to a family member. ",
 },
+// ****************************************************
 {
   pattern: `Travel / C`,
   answer:" Travel Oversea",
