@@ -1,26 +1,33 @@
-![Rebus](./public/images/Rebus_logo.png)
+<p align="center">
+  <h1 align="center">REBUS</h1>
 
-:bulb: A simple game project
+  <img src="./public/images/Rebus_logo.png" alt="letter R" align="center"/>
+</p>
+
+:bulb: A Simple Game Project.
 
 # Contents
 
 - [How to contribute](#How-to-Contribute)
   - [Fork this repository](#Fork-this-repository)
-  - [Clone this repository to Vscode](#Clone-this-repository-to-Vscode)
+  - [Clone this repository](#Clone-this-repository)
+    - [Clone this repository to Vscode](#Clone-this-repository-to-Vscode)
     - [Import from Github to Replit](#Import-from-Github-to-Replit)
   - [Make changes](#Make-changes)
-    - [See your changes](#See-your-changes)
-      - [Check changes on Vscode](#Check-changes-on-Vscode)
-      - [Check changes on Replit](#Check-changes-on-Replit)
+  - [See your changes](#See-your-changes)
+    - [Check changes on Vscode](#Check-changes-on-Vscode)
+    - [Check changes on Replit](#Check-changes-on-Replit)
   - [Commit and Push changes to Github](#Commit-and-Push-changes-to-Github)
     - [Commit and Push from VScode](#Commit-and-Push-from-VScode)
     - [Commit and Push from Replit](#Commit-and-Push-from-Replit)
   - [Submit your changes for review](#Submit-your-changes-for-review)
-- [Upcoming Features](#Upcoming-Features)
+- [Upcoming Features for Rebus](#Upcoming-Features-for-Rebus)
 
 # How to Contribute
 
 If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
+If you don't have Vscode, [install it]()
+If you don't have a replit account, feel free to create one [here]()
 
 ## Fork this repository
 
@@ -28,17 +35,29 @@ Fork this repository by clicking on the fork button on the top of this page. Thi
 
 ![For this repo](./screenshots/1.jpg)
 
-## Clone this repository to Vscode
+## Clone this repository
+
+In this section, I will give full details on how to clone this repo on Vscode or Replit. You can choose any one between them to contribute to this project.
+
+### Clone this repository to Vscode
+
+  _Skip to [Import from Github to Replit](#Import-from-Github-to-Replit)]_
 
 Now clone the forked repository to your machine. Go to your Github account, open the forked repository, click on the button then click the _copy to clipboard_ icon.
 
-Open a terminal in vscode and run the following git commands:
+![clone this repo](./screenshots/2.jpg)
+![Copy the url](./screenshots/3.jpg)
+
+Open your Vscode click on Terminal section and open a new terminal in vscode or use `ctrl + f7`, when it is opened run the following git commands:
 
 ```
 git clone "url you just copied"
 ```
 
-:bulb: where "url you just copied" is the url to this repository (without the quotation marks).
+:bulb: where "url you just copied" is the url to this repository (without the quotation marks) as shown below.
+
+![New terminal](./screenshots/4.jpg)
+![git clone](./screenshots/5.jpg)
 
 For example:
 
@@ -48,13 +67,45 @@ git clone https://github.com/this-is-you/Rebus-Puzzles_webpage.git
 
 where `this-is-you` is your Github username.
 
-:bulb: You can also import from Github to Replit.
+If successful, you should get this;
+
+![Cloned Successfully](./screenshots/6.png)
 
 ### Import from Github to Replit
 
 ## Make changes
 
-Now click on the src folder and open `Rebuses.jsx` file in a text editor, add your own rebus to it. Don't add it at the beginning or end of the file. Put it anywhere in between. Now, save the file.
+### On Vscode
+
+  If terminal is still open, change directory to the new Rebus-Puzzles_webpage, using  this command:
+
+  ```
+  cd Rebus-Puzzles_webpage
+  ```
+
+  ![change directory](./screenshots/7.png)
+
+  Then use this command to open the repository folder on Vscode.
+
+  ```
+  code .
+  ```
+
+  ![Open a new window with the current folder](./screenshots/8.png)
+
+  This will open a new window of Vscode with the Rebus repo folder you cloned.
+
+### On Replit
+
+Just go ahead to the `Next step` below.
+
+#### Next step
+
+Now click on the src folder and open `Rebuses.jsx` file.
+
+![src folder](./screenshots/9.jpg) ![rebuses file](./screenshots/10a.jpg)
+
+Add your own rebus to it. **Don't add it at the beginning or end of the file. Put it anywhere in between.** Using this format;
 
 ```
 {
@@ -64,23 +115,39 @@ Now click on the src folder and open `Rebuses.jsx` file in a text editor, add yo
 },
 ```
 
-:bulb: Your rebus should be in the format above. Note those commas ',' they are very important.
+![rebuses file](./screenshots/11.jpg)
+
+:bulb: Those commas ',' in the format above are very important.
+
+Note: In your rebus `pattern`, if you want to include emojis. You can get the full list of html emojis at [HTML Emojis](https://www.w3schools.com/charsets/ref_emoji.asp) then use them these ways;
+
+- If you are using the `dec code` of your preferred emoji, write the `dec code` in this format into the pattern (`&#the-dec-code`)
+
+- If you feel like using the `hex code`, write it in this format (`&#xthe-hex-code`)
+
+Examples are provided in the `Rebuses.jsx` file.
 
 ## See your changes
 
 ### Check changes on Vscode
 
-Open a terminal, change directory to the cloned repo and run this command:
+  _skip to [Check changes on Replit](#Check-changes-on-Replit)_
+
+If terminal is not open, Open the terminal then change directory to the cloned repo and run this command:
 
 ```
 npm run dev
 ```
 
-If you got this warning `vite is not recognized as an internal or external command`, run this command with internet connection to install vite:
+![npm run dev](./screenshots/12.png)
+
+If you get this warning `vite is not recognized as an internal or external command`, run this command with internet connection to install vite:
 
  ```
  npm i vite
  ```
+
+![vite installed](./screenshots/13.png)
 
 After the installation is successful, run this command again:
 
@@ -88,7 +155,11 @@ After the installation is successful, run this command again:
 npm run dev
 ```
 
+![npm run](./screenshots/14.png)
+
 then press ```alt + click``` on your keyboard to click on the `http://localhost:.../`
+
+![open the project on your browser](./screenshots/15.png)
 
 This will automatically open your browser and render the result on your screen in the browser tab.
 
@@ -100,11 +171,17 @@ You can check the changes you've made by simplying clicking on the run button.
 
 ### Commit and Push from VScode
 
+ _skip to [Commit and Push from Replit](#Commit-and-Push-from-Replit)_
+
 Open a terminal, change directory to the project directory and execute the command `git status`, you'll see the changes and what file you made the changes.
 
-Add those changes to the branch you just created using the `git add .` command:
+![git status](./screenshots/18.png)
 
-Now commit those changes using the `git commit` command:
+Add those changes to your branch using the `git add .` command:
+
+![git add ,](./screenshots/19.png)
+
+Now commit those changes using this command:
 
 ```
 git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
@@ -112,6 +189,7 @@ git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
 
 replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added.
 
+![git commit](./screenshots/20.png)
 Push your changes using the command `git push`:
 
 ```
@@ -136,20 +214,35 @@ replace `<branch-name>` with `main`,`master` or your current branch name.
 
 ### Commit and Push from Replit
 
-To commit and push from Replit, follow the images below:
+To commit and push from Replit, follow the steps and images below:
 
 ## Submit your changes for review
 
-If you go to your repository on Github, you'll see a `Contribute` and `Sync fork` buttons as shown below:
+Now go back to the cloned repository on your Github account, you'll see a `Contribute` and `Sync fork` buttons as shown below:
+
+![Update branch](./screenshots/25.jpg)
+
+**This is important** - click on the `sync fork` button first to update your forked repository from the latest commit of the original Rebus-Puzzles_webpage repository.
+
+![sync fork]()
+
+- After you have gotten the message ``, then click on the `contribute` button to send a pull request.
+
+![contribute and send pull request]()
+
+:bulb: A pull request is an event that takes place in software development when a contributor/developer is ready to begin the process of merging new code changes with the main project repository.
 
 Now sumbit the pull request.
 
+![Pull request]()
+
 Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
 
-Thank you for your contribution Champ :Love:
+Thank you for your contribution Champ
 
 # Upcoming Features for Rebus
+
 - New UI for desktop view
 - Input your name before starting the game
 
-:bulb: You can send in the feature(s) you think I should add by emailing youngtechie0@gmail.com. Thank you :kissing_heart:
+:bulb: You can also send in the feature(s) you think I should add by emailing youngtechie0@gmail.com. Thank you :kissing_heart:
