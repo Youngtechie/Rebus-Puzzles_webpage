@@ -7,7 +7,7 @@
 - [How to contribute](#How-to-Contribute)
   - [Fork this repository](#Fork-this-repository)
   - [Clone this repository to Vscode](#Clone-this-repository-to-Vscode)
-    - [Import the forked repository to Replit](#Import-forked-repository-on-Replit)
+    - [Import the forked repository to Replit](#Import-the-forked repository-to-Replit)
   - [Make changes](#Make-changes)
     - [See your changes](#See-your-changes)
       - [Check changes on Vscode](#Check-on-Vscode)
@@ -75,13 +75,11 @@ Open a terminal, change directory to the cloned repo and run this command:
 npm run dev
 ```
 
-then press ```alt + click``` on your keyboard to click on the `http://localhost:.../` 
+then press ```alt + click``` on your keyboard to click on the `http://localhost:.../`
 
 This will automatically open your browser and render the result on your screen in the browser tab.
 
 ### Check changes on Replit
-
-
 
 <!-- If you go to the project directory and execute the command `git status`, you'll see there are changes.
 
