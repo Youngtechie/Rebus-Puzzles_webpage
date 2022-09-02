@@ -81,7 +81,13 @@ This will automatically open your browser and render the result on your screen i
 
 ### Check changes on Replit
 
-<!-- If you go to the project directory and execute the command `git status`, you'll see there are changes.
+You can check the changes you've made by simplying clicking on the run button.
+
+## Commit and Push changes to Github
+
+### Commit and Push from VScode
+
+Open a terminal, change directory to the project directory and execute the command `git status`, you'll see the changes and what file you made the changes.
 
 Add those changes to the branch you just created using the `git add .` command:
 
@@ -91,4 +97,42 @@ Now commit those changes using the `git commit` command:
 git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
 ```
 
-replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added. -->
+replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added.
+
+Push your changes using the command `git push`:
+
+```
+git push origin <branch-name>
+```
+
+replace `<branch-name>` with `main`,`master` or your current branch name.
+
+:bulb: use `git branch` to check the branch you are working on.
+
+<details>
+<summary> <strong>If you get any errors while pushing, click here:</strong> </summary>
+
+- ### Authentication Error
+
+     <pre>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+  remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+  fatal: Authentication failed for 'https://github.com/<your-username>/Rebus-Puzzles_webpage.git/'</pre>  
+   Go to [GitHub's tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on generating and configuring an SSH key to your account.
+
+</details>
+
+### Commit and Push from Replit
+
+To commit and push from Replit, follow the images below:
+
+## Submit your changes for review
+
+If you go to your repository on Github, you'll see a `Contribute` and `Sync fork` buttons as shown below:
+
+Now sumbit the pull request.
+
+Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
+
+Thank you for your contribution Champ :love:
+
+# Upcoming Features
