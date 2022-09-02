@@ -6,6 +6,8 @@
 
 :bulb: A Simple Game Project.
 
+<hr/>
+
 # Contents
 
 - [How to contribute](#How-to-Contribute)
@@ -173,15 +175,15 @@ You can check the changes you've made by simplying clicking on the run button.
 
  _skip to [Commit and Push from Replit](#Commit-and-Push-from-Replit)_
 
-Open a terminal, change directory to the project directory and execute the command `git status`, you'll see the changes and what file you made the changes.
+- Open a terminal, change directory to the project directory and execute the command `git status`, you'll see the changes and what file you made the changes.
 
 ![git status](./screenshots/18.png)
 
-Add those changes to your branch using the `git add .` command:
+- Add those changes to your branch using the `git add .` command:
 
 ![git add ,](./screenshots/19.png)
 
-Now commit those changes using this command:
+- Now commit those changes using this command:
 
 ```
 git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
@@ -190,7 +192,12 @@ git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
 replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added.
 
 ![git commit](./screenshots/20.png)
-Push your changes using the command `git push`:
+
+- Check the name of the branch you have been working on using the command `git branch`. If branch is more than one, the current one you are working on will have an asterisk (*) in front of it as shown below. 
+
+![git branch](./screenshots/21.png)
+
+- Push your changes using the command:
 
 ```
 git push origin <branch-name>
@@ -198,7 +205,7 @@ git push origin <branch-name>
 
 replace `<branch-name>` with `main`,`master` or your current branch name.
 
-:bulb: use `git branch` to check the branch you are working on.
+![git push](.)
 
 <details>
 <summary> <strong>If you get any errors while pushing, click here:</strong> </summary>
