@@ -17,7 +17,6 @@
     - [Commit and Push from Replit](#Commit-and-Push-from-Replit)
   - [Submit your changes for review](#Submit-your-changes-for-review)
 - [Upcoming Features](#Upcoming-Features)
-- [Notes](#Notes)
 
 # How to Contribute
 
@@ -133,6 +132,10 @@ Now sumbit the pull request.
 
 Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
 
-Thank you for your contribution Champ :love:
+Thank you for your contribution Champ :Love:
 
-# Upcoming Features
+# Upcoming Features for Rebus
+- New UI for desktop view
+- Input your name before starting the game
+
+:bulb: You can send in the feature(s) you think I should add by emailing youngtechie0@gmail.com. Thank you :kissing_heart:
