@@ -11,6 +11,11 @@ const rebuses = [{
   hint: "A popular name for 'Nitrous Oxide'",
 },
 {
+  pattern: `&#x1F525 + &#x1F98a`,
+  answer: `Firefox`,
+  hint: `A popular Web browser`,
+},
+{
   pattern: `stan4ce`,
   answer: `For instance`,
   hint: `as an example`,
