@@ -39,7 +39,7 @@ Fork this repository by clicking on the fork button on the top of this page. Thi
 
 Then create fork
 
-![create fork](./screenshots/2.png)
+![create fork](./screenshots/2.jpg)
 
 ## Clone this repository
 
