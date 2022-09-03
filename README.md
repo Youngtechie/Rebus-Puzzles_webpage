@@ -86,6 +86,30 @@ If successful, you should get this;
 
 ### Import from Github to Replit
 
+If you don't have replit account, create one [here](https://replit.com/signup).
+
+If done with the creating and set-ups or already created, navigate to the `home` section and check under `My repls` section, click on the `create` button to create new repl as shown below:
+
+![create new repl](./screenshots/10.jpg)
+
+After that, on the section that pops up click on  `import from Github` button which is at the right top corner of the section as shown below:
+
+![import from github button](./screenshots/11.jpg)
+
+Go to the tab of your cloned repository and copy the URL as shown below:
+
+![url](./screenshots/12.png)
+
+Then input the copied URL into the space labelled 1. in the pic below:
+
+![Follow up](./screenshots/13.jpg)
+
+If the (2) language detected is `Node.js`, change it to `HTML,CSS & JS` as shown above.
+
+Then if you've done those steps above, click on the button labelled (3) `Import from Github`.
+
+Boom!!! You've just imported the cloned repo from Github to Replit :grin:
+
 ## Make changes
 
 ### On Vscode
@@ -96,7 +120,7 @@ If successful, you should get this;
   cd Rebus-Puzzles_webpage
   ```
 
-  ![change directory](./screenshots/7.png)
+  ![change directory](./screenshots/)
 
   Then use this command to open the repository folder on Vscode.
 
@@ -104,7 +128,7 @@ If successful, you should get this;
   code .
   ```
 
-  ![Open a new window with the current folder](./screenshots/8.png)
+  ![Open a new window with the current folder](./screenshots/)
 
   This will open a new window of Vscode with the Rebus repo folder you cloned.
 
@@ -116,7 +140,7 @@ Just go ahead to the `Next step` below.
 
 Now click on the src folder and open `Rebuses.jsx` file.
 
-![src folder](./screenshots/9.jpg) ![rebuses file](./screenshots/10a.jpg)
+![src folder](./screenshots/) ![rebuses file](./screenshots/10a.jpg)
 
 Add your own rebus to it. **Don't add it at the beginning or end of the file. Put it anywhere in between.** Using this format;
 
