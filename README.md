@@ -47,9 +47,11 @@ In this section, I will give full details on how to clone this repo on Vscode an
 
 ### Clone this repository to Vscode
 
-  _Skip to [Import from Github to Replit](#Import-from-Github-to-Replit)]_
+Firstly, you have to create a personal token. click [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create one and strictly follow the steps and instructions there.
 
-Now clone the forked repository to your machine. Go to your Github account, open the forked repository, click on the `code` button then click the _copy to clipboard_ icon as shown below:
+ _Skip to [Import from Github to Replit](#Import-from-Github-to-Replit)]_
+
+Now clone the forked repository to your machine. Go to your Github account and open the forked repository, click on the `code` button then click the _copy to clipboard_ icon as shown below:
 
 ![clone this repo](./screenshots/3.jpg)
 ![Copy the url](./screenshots/4.png)
@@ -62,27 +64,21 @@ Open your Vscode click on Terminal section and click `new terminal` to open a te
 
 ![Vscode Terminal](./screenshots/6.jpg) ![Vscode New terminal](./screenshots/7.jpg)
 
-When it is opened run the following git commands:
+When it is opened, run the following git commands:
 
 ```
-git clone "url you just copied"
+git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/Rebus-Puzzles_webpage.git
 ```
 
-:bulb: where "url you just copied" is the url to this repository (without the quotation marks) as shown below.
+:bulb: Replace {YOUR_PERSONAL_TOKEN} with the personal access token generated from the first step above. Replace {YOUR_USERNAME} with your github username as shown below.
 
 :bulb: right-click on the terminal to paste what you just copied.
 
 ![New terminal](./screenshots/8.png)
 
-```
-git clone https://github.com/this-is-you/Rebus-Puzzles_webpage.git
-```
-
-Where `this-is-you` is your Github username.
-
 If successful, you should get this;
 
-![Cloned Successfully](./screenshots/9.png)
+![Cloned Successfully](./screenshots/9.jpg)
 
 ### Import from Github to Replit
 
@@ -106,9 +102,11 @@ Then input the copied URL into the space labelled 1. in the pic below:
 
 If the (2) language detected is `Node.js`, change it to `HTML,CSS & JS` as shown above.
 
-Then if you've done those steps above, click on the button labelled (3) `Import from Github`.
+Then if you've done these steps above, click on the button labelled (3) `Import from Github`.
 
 Boom!!! You've just imported the cloned repo from Github to Replit :grin:
+
+Just wait for some seconds for everything to load onto the screen.
 
 ## Make changes
 
@@ -130,7 +128,7 @@ Boom!!! You've just imported the cloned repo from Github to Replit :grin:
 
   ![Open a new window with the current folder](./screenshots/15.png)
 
-  This will open a new window of Vscode with the Rebus repo folder you cloned.
+  This will open a new window of Vscode with the Rebus cloned repo folder.
 
 ### On Replit
 
@@ -193,7 +191,7 @@ npm run dev
 
 then press `alt` on your keyboard and click on the `http://localhost:.../`
 
-![open the project on your browser](./screenshots/23.png) 
+![open the project on your browser](./screenshots/23.png)
 
 This will automatically open your browser and render the result on your screen in the browser tab.
 
@@ -201,17 +199,16 @@ This will automatically open your browser and render the result on your screen i
 
 ### Check changes on Replit
 
-Click on the `shell` section to run this command:
+Click on the `shell` button at the right side section to run this command:
 
 ```
 npm install
 ```
 
 ![Shell](./screenshots/25.jpg)
-
-If you get this:
-
 ![npm not install](./screenshots/26.png)
+
+If you get the above error and suggestion;
 
 Just press `Enter` on your keyboard to continue.
 
@@ -229,11 +226,13 @@ npm run dev
 
 ![replit npm run dev](./screenshots/29.png)
 
-Then back to the `Webview` section and after some seconds, you will see the webpage render to the screen there as shown below:
+Then click on the `Webview` button and after some seconds, you will see the webpage render to the screen there as shown below:
 
 ![webview](./screenshots/30.jpg)
 
 :bulb: You can click on the button labelled (2) to view in fullscreen.
+
+Note: If you don't get the result after some minutes, go to the shell and click on the `http://localhost:.../`
 
 ## Commit and Push changes to Github
 
@@ -241,9 +240,39 @@ Then back to the `Webview` section and after some seconds, you will see the webp
 
  _skip to [Commit and Push from Replit](#Commit-and-Push-from-Replit)_
 
-- Open a terminal, change directory to the project directory and execute the command `git status`, you'll see the changes and what file you made the changes.
+- Open a new terminal (ctrl + f7), change directory to the project directory and execute the commands if you haven't done it before:
+
+```
+git config --global user.email "youremail@example.com"
+```
+
+example:
+
+![user email](./screenshots/31.png)
+
+After that, execute this command also:
+
+```
+git config --global user.name "Your name"
+```
+
+example:
+
+![user name](./screenshots/32.png)
+
+Successfully done? move to the next section below.
+
+- Execute this command to see the file(s) you made changes in:
+
+```
+git status
+```
+
+![git status](./screenshots/33.png)
 
 - Add those changes to your branch using the `git add .` command:
+
+![git add](./screenshots/34.png)
 
 - Now commit those changes using this command:
 
@@ -251,57 +280,87 @@ Then back to the `Webview` section and after some seconds, you will see the webp
 git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
 ```
 
-replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added.
+replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added as shown below.
 
-- Check the name of the branch you have been working on using the command `git branch`. If branch is more than one, the current one you are working on will have an asterisk (*) in front of it as shown below. 
+![git commit](./screenshots/35.png)
 
 - Push your changes using the command:
 
 ```
-git push origin <branch-name>
+git push
 ```
 
-replace `<branch-name>` with `main`,`master` or your current branch name.
+![git push](./screenshots/36.png)
 
-![git push](.)
-
-<details>
-<summary> <strong>If you get any errors while pushing, click here:</strong> </summary>
-
-- ### Authentication Error
-
-     <pre>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
-  remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
-  fatal: Authentication failed for 'https://github.com/<your-username>/Rebus-Puzzles_webpage.git/'</pre>  
-   Go to [GitHub's tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on generating and configuring an SSH key to your account.
-
-</details>
+Boom!!!!! You have successfully pushed the changes to your cloned repo from Vscode. :grin:
 
 ### Commit and Push from Replit
 
-To commit and push from Replit, follow the steps and images below:
+To commit and push from Replit, follow the images below:
+
+![version control](./screenshots/37.jpg)
+
+Click on the button the arrow is pointing at, and fill in your commit into the field labelled (2), then click on the button `commit all & push` as labelled (3) in the image above.
+
+![Unable to connect](./screenshots/38.png)
+
+If the above pops up, click on the `connect replit to your github account`.
+
+![connecting](./screenshots/39.jpg)
+
+In the above image, you can choose to pick one out of the label (1) and (2).
+
+then click on the label (3) to continue.
+
+Next, you should see this:
+
+![push to git](./screenshots/40.jpg)
+
+Click on the button labelled `push`
+
+Then, you are done with the pushing if you get this: 
+
+![Successfully pushed](./screenshots/41.png)
+
+Booyah!!! :grin:
 
 ## Submit your changes for review
 
 Now go back to the cloned repository on your Github account, you'll see a `Contribute` and `Sync fork` buttons as shown below:
 
-**This is important** - click on the `sync fork` button first to update your forked repository from the latest commit of the original Rebus-Puzzles_webpage repository.
+![Update and contribute](./screenshots/42.jpg)
 
-![sync fork]()
+**This is important** - click on the `sync fork` as labelled (3) in the image above first to update your forked repository from the latest commit of the original Rebus-Puzzles_webpage repository because sometimes, you might not notice the labelled (1) but doing this will save you some stress which you will face if not done.
 
-- After you have gotten the message ``, then click on the `contribute` button to send a pull request.
+![sync fork](./screenshots/43.jpg)
 
-![contribute and send pull request]()
+- After you have gotten the message:
+
+![fetched](./screenshots/44.png)
+
+Then click on the `contribute` button to send a pull request.
+
+![contribute and send pull request](./screenshots/45.jpg)
 
 :bulb: A pull request is an event that takes place in software development when a contributor/developer is ready to begin the process of merging new code changes with the main project repository.
 
 Now sumbit the pull request.
 
-![Pull request]()
+![Pull request](./screenshots/46.jpg)
+
+Scroll down to see your changes.
+
+for example:
+
+![Changes](./screenshots/47.png)
+
+You can also the preview of your changes by click :
+
+![Preview](./screenshots/48.jpg)
 
 Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
 
-Thank you for your contribution Champ
+Thank you for your contribution Champ :trophy: :relaxed:
 
 # Upcoming Features for Rebus
 
