@@ -26,14 +26,20 @@
 # How to Contribute
 
 If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
-If you don't have Vscode, [install it]()
-If you don't have a replit account, feel free to create one [here]()
+
+If you don't have Vscode, [install it](https://code.visualstudio.com/download).
+
+If you don't have a replit account, feel free to create one [here](https://replit.com/signup).
 
 ## Fork this repository
 
 Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
 
 ![For this repo](./screenshots/1.jpg)
+
+Then create fork
+
+![create fork](./screenshots/2.png)
 
 ## Clone this repository
 
@@ -43,12 +49,19 @@ In this section, I will give full details on how to clone this repo on Vscode an
 
   _Skip to [Import from Github to Replit](#Import-from-Github-to-Replit)]_
 
-Now clone the forked repository to your machine. Go to your Github account, open the forked repository, click on the button then click the _copy to clipboard_ icon.
+Now clone the forked repository to your machine. Go to your Github account, open the forked repository, click on the `code` button then click the _copy to clipboard_ icon as shown below:
 
-![clone this repo](./screenshots/2.jpg)
-![Copy the url](./screenshots/3.jpg)
+![clone this repo](./screenshots/3.jpg) ![Copy the url](./screenshots/4.jpg)
 
-Open your Vscode click on Terminal section and open a new terminal in vscode or use `ctrl + f7`, when it is opened run the following git commands:
+If successfully copied, you should get this:
+
+![Successfully copied](./screenshots/5.png)
+
+Open your Vscode click on Terminal section and click `new terminal` to open a terminal in vscode or use `ctrl + f7` as shown below:
+
+![Vscode Terminal](./screenshots/6.jpg) ![Vscode New terminal](./screenshots/7.jpg)
+
+When it is opened run the following git commands:
 
 ```
 git clone "url you just copied"
@@ -56,8 +69,9 @@ git clone "url you just copied"
 
 :bulb: where "url you just copied" is the url to this repository (without the quotation marks) as shown below.
 
-![New terminal](./screenshots/4.jpg)
-![git clone](./screenshots/5.jpg)
+:bulb: right-click on the terminal to paste what you just copied.
+
+![New terminal](./screenshots/8.png)
 
 For example:
 
@@ -69,7 +83,7 @@ Where `this-is-you` is your Github username.
 
 If successful, you should get this;
 
-![Cloned Successfully](./screenshots/6.png)
+![Cloned Successfully](./screenshots/9.png)
 
 ### Import from Github to Replit
 
