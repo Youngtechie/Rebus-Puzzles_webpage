@@ -1,0 +1,58 @@
+.TutorialPage{
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    width: 300px;
+    height: 450px;
+    box-shadow: 2px 2px orange, -2px -2px orange;
+    border-radius: 20px;
+    background: #fff;
+    z-index: 200;
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+.eachT{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+}
+.eachT span{
+    width: 90%;
+}
+.TutorialPage img{
+    width: 10%;
+    height: 25px;
+    filter: brightness(1) invert(0);
+    margin-right: 10px;
+
+}
+.TutorialPage .Tnxt{
+    transform: rotateZ(180deg)
+  }
+.Tbtn{
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    background: #1c1c1c;
+    font-weight: 900;
+    width: 35%;
+    margin-right: 10px;
+    color: #fff;
+}
+#Tbtnskip{
+    margin-top: 10px;
+    align-self: flex-end;
+}
+#Tbtnskip:hover{
+    background-color: rgb(255, 0, 0);
+}
+strong{
+    font-weight: 900;
+}

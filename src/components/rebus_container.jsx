@@ -34,6 +34,10 @@ export default function RebusesContainer(){
       document.querySelector(".hint").style.backgroundColor = 'inherit'
       document.querySelector('.rebusAns').value = ""
     }
+    if(counter == 1){
+      let TutorialPage = document.querySelector('.TutorialPage');
+      TutorialPage.style.zIndex = "200"
+    }
   }
 
   // function for the next button
@@ -74,7 +78,7 @@ export default function RebusesContainer(){
   let hintbtn = (x) => {
     x.preventDefault()
     let hintp = document.querySelector('.hint p').style.display
-    if(hintp == 'none'){
+    if(point > 49 && hintp == 'none'){
       setPoint(prev => prev - 50)
       document.querySelector('.hint p').style.display = 'block'
       document.querySelector(".hint").style.backgroundColor = '#fff'
@@ -85,8 +89,8 @@ export default function RebusesContainer(){
     x.preventDefault()
     let hintp = document.querySelector('.hint p').style.display
     let rebA =  document.querySelector('.rebusAns')
-    if(point > 0 && rebA.value != rebusAnswer ){
-    setPoint(prev => prev - 200)
+    if(point > 249 && rebA.value != rebusAnswer ){
+    setPoint(prev => prev - 250)
     rebA.value = rebusAnswer
     document.querySelector('.hint p').style.display = 'block'
     document.querySelector(".hint").style.backgroundColor = '#fff'
@@ -137,7 +141,7 @@ export default function RebusesContainer(){
     setTimeout(() => {
       result.setAttribute('style', 'visibility: hidden;')
       document.querySelector('.result_container').setAttribute("style", "display: none")
-    }, 4000);
+    }, 3000);
   }
 
   //function for reset button

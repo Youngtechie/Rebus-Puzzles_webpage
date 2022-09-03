@@ -1,10 +1,8 @@
-<p align="center">
+<p style="display: flex; flex-flow: column wrap; align-items: center; justify-content: center;">
   <h1 align="center">REBUS</h1>
-
-  <img src="./public/images/Rebus_logo.png" alt="letter R" align="center"/>
+  <img src="./public/images/Rebus_logo.png" alt="letter R"/>
+  <span style="margin-top: 20px;"> &#128161 A Simple Game Project. </span>
 </p>
-
-:bulb: A Simple Game Project.
 
 <hr/>
 
@@ -39,7 +37,7 @@ Fork this repository by clicking on the fork button on the top of this page. Thi
 
 ## Clone this repository
 
-In this section, I will give full details on how to clone this repo on Vscode or Replit. You can choose any one between them to contribute to this project.
+In this section, I will give full details on how to clone this repo on Vscode and Replit. You can choose any one between the two to contribute to this project.
 
 ### Clone this repository to Vscode
 
@@ -67,7 +65,7 @@ For example:
 git clone https://github.com/this-is-you/Rebus-Puzzles_webpage.git
 ```
 
-where `this-is-you` is your Github username.
+Where `this-is-you` is your Github username.
 
 If successful, you should get this;
 
@@ -249,7 +247,8 @@ Thank you for your contribution Champ
 
 # Upcoming Features for Rebus
 
-- New UI for desktop view
-- Input your name before starting the game
+- New UI for desktop view.
+- Warning when hint or get answer button is click with insufficient point.
+- Input your name before starting the game.
 
 :bulb: You can also send in the feature(s) you think I should add by emailing youngtechie0@gmail.com. Thank you :kissing_heart:
