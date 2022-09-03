@@ -6,17 +6,17 @@ const rebuses = [{
 },
 // Add your rebuses within here
 {
-  pattern: `&#128514 gas`,
+  pattern: `&#128514 + gas`,
   answer:" laughing gas ",
   hint: "A popular name for 'Nitrous Oxide'",
 },
 {
-  pattern: `&#x1F525 + &#129418`,
-  answer: `Firefox`,
-  hint: `A popular Web browser`,
+  pattern: `stan4ce`,
+  answer: `For instance`,
+  hint: `as an example`,
 },
 {
-  pattern: `&#128065 &#128151 U`,
+  pattern: `&#128065 + &#128151 + U`,
   answer:" i love you",
   hint: " An affirmation of affection or deep caring, especially to a family member. ",
 },
