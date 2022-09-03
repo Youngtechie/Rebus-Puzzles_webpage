@@ -120,7 +120,7 @@ Boom!!! You've just imported the cloned repo from Github to Replit :grin:
   cd Rebus-Puzzles_webpage
   ```
 
-  ![change directory](./screenshots/)
+  ![change directory](./screenshots/14.png)
 
   Then use this command to open the repository folder on Vscode.
 
@@ -128,7 +128,7 @@ Boom!!! You've just imported the cloned repo from Github to Replit :grin:
   code .
   ```
 
-  ![Open a new window with the current folder](./screenshots/)
+  ![Open a new window with the current folder](./screenshots/15.png)
 
   This will open a new window of Vscode with the Rebus repo folder you cloned.
 
@@ -140,7 +140,7 @@ Just go ahead to the `Next step` below.
 
 Now click on the src folder and open `Rebuses.jsx` file.
 
-![src folder](./screenshots/) ![rebuses file](./screenshots/10a.jpg)
+![src folder](./screenshots/16.jpg) ![rebuses file](./screenshots/17.png)
 
 Add your own rebus to it. **Don't add it at the beginning or end of the file. Put it anywhere in between.** Using this format;
 
@@ -152,7 +152,8 @@ Add your own rebus to it. **Don't add it at the beginning or end of the file. Pu
 },
 ```
 
-![rebuses file](./screenshots/11.jpg)
+![rebuses file](./screenshots/18.png)
+![rebuses file](./screenshots/19.png)
 
 :bulb: Those commas ',' in the format above are very important.
 
@@ -173,36 +174,66 @@ Examples are provided in the `Rebuses.jsx` file.
 If terminal is not open, Open the terminal then change directory to the cloned repo and run this command:
 
 ```
-npm run dev
+npm install
 ```
 
-![npm run dev](./screenshots/12.png)
+![npm install](./screenshots/20.png)
 
-If you get this warning `vite is not recognized as an internal or external command`, run this command with internet connection to install vite:
+Wait for the installation to finish. You should get this:
 
- ```
- npm i vite
- ```
+![npm installed](./screenshots/21.png)
 
-![vite installed](./screenshots/13.png)
-
-After the installation is successful, run this command again:
+After the installation is successful, run this command:
 
 ```
 npm run dev
 ```
 
-![npm run](./screenshots/14.png)
+![npm run dev](./screenshots/22.png)
 
-then press ```alt + click``` on your keyboard to click on the `http://localhost:.../`
+then press `alt` on your keyboard and click on the `http://localhost:.../`
 
-![open the project on your browser](./screenshots/15.png)
+![open the project on your browser](./screenshots/23.png) 
 
 This will automatically open your browser and render the result on your screen in the browser tab.
 
+![project opened](./screenshots/24.jpg)
+
 ### Check changes on Replit
 
-You can check the changes you've made by simplying clicking on the run button.
+Click on the `shell` section to run this command:
+
+```
+npm install
+```
+
+![Shell](./screenshots/25.jpg)
+
+If you get this:
+
+![npm not install](./screenshots/26.png)
+
+Just press `Enter` on your keyboard to continue.
+
+![installing](./screenshots/27.png)
+
+Wait for the installation to complete.
+
+![installation complete](./screenshots/28.png)
+
+After the installation is successful as shown above, run this command:
+
+```
+npm run dev
+```
+
+![replit npm run dev](./screenshots/29.png)
+
+Then back to the `Webview` section and after some seconds, you will see the webpage render to the screen there as shown below:
+
+![webview](./screenshots/31.jpg)
+
+:bulb: You can click on the button labelled (2) to view in fullscreen.
 
 ## Commit and Push changes to Github
 
@@ -212,11 +243,7 @@ You can check the changes you've made by simplying clicking on the run button.
 
 - Open a terminal, change directory to the project directory and execute the command `git status`, you'll see the changes and what file you made the changes.
 
-![git status](./screenshots/18.png)
-
 - Add those changes to your branch using the `git add .` command:
-
-![git add ,](./screenshots/19.png)
 
 - Now commit those changes using this command:
 
@@ -226,11 +253,7 @@ git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
 
 replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added.
 
-![git commit](./screenshots/20.png)
-
 - Check the name of the branch you have been working on using the command `git branch`. If branch is more than one, the current one you are working on will have an asterisk (*) in front of it as shown below. 
-
-![git branch](./screenshots/21.png)
 
 - Push your changes using the command:
 
@@ -261,8 +284,6 @@ To commit and push from Replit, follow the steps and images below:
 ## Submit your changes for review
 
 Now go back to the cloned repository on your Github account, you'll see a `Contribute` and `Sync fork` buttons as shown below:
-
-![Update branch](./screenshots/25.jpg)
 
 **This is important** - click on the `sync fork` button first to update your forked repository from the latest commit of the original Rebus-Puzzles_webpage repository.
 
