@@ -140,7 +140,7 @@ Just go ahead to the `Next step` below.
 
 Now click on the src folder and open `Rebuses.jsx` file.
 
-![src folder](./screenshots/16.jpg) ![rebuses file](./screenshots/17.png)
+![src folder](./screenshots/16.jpg) ![rebuses file](./screenshots/17.jpg)
 
 Add your own rebus to it. **Don't add it at the beginning or end of the file. Put it anywhere in between.** Using this format;
 
@@ -231,7 +231,7 @@ npm run dev
 
 Then back to the `Webview` section and after some seconds, you will see the webpage render to the screen there as shown below:
 
-![webview](./screenshots/31.jpg)
+![webview](./screenshots/30.jpg)
 
 :bulb: You can click on the button labelled (2) to view in fullscreen.
 
