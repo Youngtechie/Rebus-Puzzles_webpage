@@ -51,7 +51,8 @@ In this section, I will give full details on how to clone this repo on Vscode an
 
 Now clone the forked repository to your machine. Go to your Github account, open the forked repository, click on the `code` button then click the _copy to clipboard_ icon as shown below:
 
-![clone this repo](./screenshots/3.jpg) ![Copy the url](./screenshots/4.jpg)
+![clone this repo](./screenshots/3.jpg)
+![Copy the url](./screenshots/4.png)
 
 If successfully copied, you should get this:
 
@@ -72,8 +73,6 @@ git clone "url you just copied"
 :bulb: right-click on the terminal to paste what you just copied.
 
 ![New terminal](./screenshots/8.png)
-
-For example:
 
 ```
 git clone https://github.com/this-is-you/Rebus-Puzzles_webpage.git
