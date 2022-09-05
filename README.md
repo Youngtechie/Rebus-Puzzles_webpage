@@ -379,7 +379,7 @@ Thank you for your contribution Champ :trophy: :relaxed:
 # Upcoming Features for this Rebus project
 
 - New UI for desktop view.
-- Warning when hint or get answer button is click with insufficient point.
+- Warning for a situation when hint or get answer button is clicked with insufficient point.
 - Input your name before starting the game.
 
 :bulb: You can also send in the feature(s) you think I should add by emailing youngtechie0@gmail.com. Thank you :kissing_heart:
