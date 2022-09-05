@@ -4,7 +4,8 @@ const rebuses = [{
   answer:" forget ",
   hint: "A verb.",
 },
-// Add your rebuses within here
+//*****************************************************
+// Add your rebuses here
 {
   pattern: `&#128514 + gas`,
   answer:" laughing gas ",
@@ -37,7 +38,7 @@ const rebuses = [{
 },
 // ****************************************************
 {
-  pattern: `Travel / C`,
+  pattern: `<h5><sup>Travel</sup></h5> <h2>/</h2> <h5><sub>ccccc</sub></h6> `,
   answer:" Travel Oversea",
   hint: " Beyond the boundaries of one's country ",
 },
