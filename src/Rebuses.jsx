@@ -2,18 +2,28 @@
 const rebuses = [{
   pattern:`get + get + get + get`,
   answer:" forget ",
-  hint: "A verb",
+  hint: "A verb.",
 },
 // Add your rebuses within here
 {
   pattern: `&#128514 + gas`,
   answer:" laughing gas ",
-  hint: "A popular name for 'Nitrous Oxide'",
+  hint: "A popular name for 'Nitrous Oxide'.",
+},
+{
+  pattern: `<span color="blue">MO</span>1ce<span color="blue">ON</span>`,
+  answer: `Once in a blue moon`,
+  hint: `very rarely.`,
 },
 {
   pattern: `&#x1F525 + &#x1F98a`,
   answer: `Firefox`,
-  hint: `A popular Web browser`,
+  hint: `A popular Web browser.`,
+},
+{
+  pattern: `E<h6>C</h6><h5>O</h5><h4>N</h4><h3>O</h3><h2>M</h2><h1>Y</h1>`,
+  answer: `Growing economy`,
+  hint: `The way the letters are becoming bigger matters.`,
 },
 {
   pattern: `stan4ce`,
