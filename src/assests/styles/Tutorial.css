@@ -50,6 +50,7 @@
 }
 #Tbtnskip{
     margin-top: 10px;
+    justify-content: flex-end;
     align-self: flex-end;
 }
 #Tbtnskip:hover{
