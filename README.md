@@ -21,8 +21,8 @@
     - [Commit and Push from VScode](#Commit-and-Push-from-VScode)
     - [Commit and Push from Replit](#Commit-and-Push-from-Replit)
   - [Submit your changes for review](#Submit-your-changes-for-review)
-- [Upcoming Features for this Rebus project](#Upcoming-Features-for-this-Rebus-project)
-- [Contibutors](#Contibutors)
+- [Upcoming features for this Rebus project](#Upcoming-features-for-this-Rebus-project)
+- [Contributors](#Contributors)
 
 # How to Contribute
 
@@ -46,7 +46,7 @@ In this section, I will give full details on how to clone this repo on Vscode an
 
 ### Clone this repository to Vscode
 
-**Firstly, you have to create a personal token. click [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create one and strictly follow the steps and instructions there.**
+**Firstly, you have to create a personal token. Click [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create one and strictly follow the steps and instructions there.**
 
  _Skip to [Import from Github to Replit](#Import-from-Github-to-Replit)]_
 
@@ -364,13 +364,13 @@ Now to create the pull request. Input the title of your PR in the field labelled
 
 After the sending of the PR, You can also preview your changes by clicking:
 
-![Preview](./screenshots/48.jpg)
+![Preview](./screenshots/47.jpg)
 
 Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
 
 Thank you for your contribution Champ :trophy: :relaxed:
 
-# Upcoming Features for this Rebus project
+# Upcoming features for this Rebus project
 
 - New UI for desktop view.
 - Warning for a situation when hint or get answer button is clicked with insufficient point.
@@ -378,7 +378,7 @@ Thank you for your contribution Champ :trophy: :relaxed:
 
 :bulb: You can also send in the feature(s) you think I should add by emailing youngtechie0@gmail.com. Thank you :kissing_heart:
 
-# Contibutors
+# Contributors
 
 <a href="https://github.com/Youngtechie/Rebus-Puzzles_webpage/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Youngtechie/Rebus-Puzzles_webpage" />
