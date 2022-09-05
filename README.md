@@ -21,7 +21,7 @@
     - [Commit and Push from VScode](#Commit-and-Push-from-VScode)
     - [Commit and Push from Replit](#Commit-and-Push-from-Replit)
   - [Submit your changes for review](#Submit-your-changes-for-review)
-- [Upcoming Features for this Rebus proect](#Upcoming-Features-for-this-Rebus-proect)
+- [Upcoming Features for this Rebus project](#Upcoming-Features-for-this-Rebus-project)
 
 # How to Contribute
 
@@ -45,14 +45,14 @@ In this section, I will give full details on how to clone this repo on Vscode an
 
 ### Clone this repository to Vscode
 
-Firstly, you have to create a personal token. click [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create one and strictly follow the steps and instructions there.
+**Firstly, you have to create a personal token. click [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create one and strictly follow the steps and instructions there.**
 
  _Skip to [Import from Github to Replit](#Import-from-Github-to-Replit)]_
 
 Go to your Github account and open the forked repository, click on the `code` button then click the _copy to clipboard_ icon as shown below:
 
 ![clone this repo](./screenshots/3.jpg)
-![Copy the url](./screenshots/4.png)
+![Copy the url](./screenshots/4.jpg)
 
 If successfully copied, you should get this:
 
@@ -110,7 +110,7 @@ Boom!!! You've just imported the cloned repo from Github to Replit :grin:
 
 ### On Vscode
 
-  _Skip to [Make changes on Replit](#On-Replit)]_
+  _Skip to [Make changes on Replit](#On-Replit)_
 
   If terminal is still open, change directory to the new Rebus-Puzzles_webpage, using  this command:
 
@@ -155,9 +155,12 @@ Add your own rebus to it. **Don't add it at the beginning or end of the file. Pu
 
 :bulb: Those commas ',' in the format above are very important.
 
-Note: In your rebus `pattern`,
+Note: In your rebus `pattern`;
+
 -You can add some html tag to design your pattern.
+
 -You can't add images.
+
 -If you want to include emojis. You can get the full list of html emojis at [HTML Emojis](https://www.w3schools.com/charsets/ref_emoji.asp) then use them these ways;
 
   -- If you are using the `dec code` of your preferred emoji, write the `dec code` in this format into the pattern (`&#the-dec-code`)
@@ -170,7 +173,7 @@ Examples are provided in the `Rebuses.jsx` file.
 
 ### Check changes on Vscode
 
-  _skip to [Check changes on Replit](#Check-changes-on-Replit)_
+  _Skip to [Check changes on Replit](#Check-changes-on-Replit)_
 
 If terminal is not open, Open the terminal then change directory to the cloned repo and run this command with internet connection:
 
@@ -211,7 +214,7 @@ npm install
 ![Shell](./screenshots/25.jpg)
 ![npm not install](./screenshots/26.png)
 
-If you get the above error and suggestion;
+If you get the above suggestion;
 
 Just press `Enter` on your keyboard to continue.
 
@@ -229,19 +232,19 @@ npm run dev
 
 ![replit npm run dev](./screenshots/29.png)
 
-Then click on the `Webview` button and after some seconds, you will see the webpage render to the screen there as shown below:
+Then click on the `Webview` button, after some seconds you should see the webpage rendered to the screen there as shown below:
 
 ![webview](./screenshots/30.jpg)
 
 :bulb: You can click on the button labelled (2) to view in fullscreen.
 
-Note: If you don't get the result after some minutes, go to the shell and click on the `http://localhost:.../`.
+Note: If you don't get the result after some minutes, go to the shell and click on the `http://localhost:.../` to show your result in a new tab in your browser.
 
 ## Commit and Push changes to Github
 
 ### Commit and Push from VScode
 
- _skip to [Commit and Push from Replit](#Commit-and-Push-from-Replit)_
+ _Skip to [Commit and Push from Replit](#Commit-and-Push-from-Replit)_
 
 - Open a new terminal (ctrl + f7), change directory to the project directory and execute the two commands below, if you haven't done it before:
 
@@ -263,7 +266,7 @@ example:
 
 ![user name](./screenshots/32.png)
 
-Successful? move to the next section below.
+Successful? if yes, move to the next section below.
 
 - Execute this command to see the file(s) you made changes in:
 
@@ -283,7 +286,7 @@ git status
 git commit -m "<your-name> added <number-of-rebus-you-added> rebus(es)"
 ```
 
-replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added as shown below.
+Replacing `<your-name>` with your name and `<number-of-rebus-you-added>` with the number of rebus(es) you just added as shown below.
 
 ![git commit](./screenshots/35.png)
 
@@ -338,9 +341,9 @@ Now go back to the cloned repository on your Github account, you'll see the `Con
 **This is important** -Before trying to send a PR(Pull Request) always click on the `sync fork` as labelled (3) in the image above because of the following:
 
 1. There might have been some updates on the repository you want to send your PR, which you are notified as labelled (1) in the image above.
-2. The PR you want to send might be for the changes another contributor as made and have been merged.
+2. The PR you want to send might be for the changes another contributor as made and it has been merged.
 
-So checking the updates if any, might save you the stress you should have gone through if not checked.
+So checking the updates, might save you the stress you should have gone through if not checked.
 
 -Now, update your forked repository from the latest commit of the original Rebus-Puzzles_webpage repository if any update.
 
@@ -360,7 +363,7 @@ For example:
 
 ![Changes](./screenshots/47.png)
 
-Now to create the pull request. Input the title of your PR in the field labelled as (1) then click on the button labelled two to finally create your PR as shown below.
+Now to create the pull request. Input the title of your PR in the field labelled as (1) then click on the button labelled (2) to finally create your PR as shown below.
 
 ![Pull request](./screenshots/46.jpg)
 
@@ -372,7 +375,7 @@ Soon I'll be merging all your changes into the main branch of this project. You 
 
 Thank you for your contribution Champ :trophy: :relaxed:
 
-# Upcoming Features for this Rebus proect
+# Upcoming Features for this Rebus project
 
 - New UI for desktop view.
 - Warning when hint or get answer button is click with insufficient point.
