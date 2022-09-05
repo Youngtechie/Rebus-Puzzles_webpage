@@ -358,12 +358,6 @@ So checking the updates, might save you the stress you should have gone through 
 
 ![contribute and send pull request](./screenshots/45.jpg)
 
-Scroll down to see your changes.
-
-For example:
-
-![Changes](./screenshots/47.png)
-
 Now to create the pull request. Input the title of your PR in the field labelled as (1) then click on the button labelled (2) to finally create your PR as shown below.
 
 ![Pull request](./screenshots/46.jpg)
