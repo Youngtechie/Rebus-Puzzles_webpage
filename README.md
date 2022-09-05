@@ -22,6 +22,7 @@
     - [Commit and Push from Replit](#Commit-and-Push-from-Replit)
   - [Submit your changes for review](#Submit-your-changes-for-review)
 - [Upcoming Features for this Rebus project](#Upcoming-Features-for-this-Rebus-project)
+- [Contibutors](#Contibutors)
 
 # How to Contribute
 
@@ -382,3 +383,9 @@ Thank you for your contribution Champ :trophy: :relaxed:
 - Input your name before starting the game.
 
 :bulb: You can also send in the feature(s) you think I should add by emailing youngtechie0@gmail.com. Thank you :kissing_heart:
+
+# Contibutors
+
+<a href="https://github.com/Youngtechie/Rebus-Puzzles_webpage/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Youngtechie/Rebus-Puzzles_webpage" />
+</a>
