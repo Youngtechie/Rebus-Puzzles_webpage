@@ -21,7 +21,7 @@
     - [Commit and Push from VScode](#Commit-and-Push-from-VScode)
     - [Commit and Push from Replit](#Commit-and-Push-from-Replit)
   - [Submit your changes for review](#Submit-your-changes-for-review)
-- [Upcoming Features for Rebus](#Upcoming-Features-for-Rebus)
+- [Upcoming Features for this Rebus proect](#Upcoming-Features-for-this-Rebus-proect)
 
 # How to Contribute
 
@@ -29,11 +29,9 @@ If you don't have git on your machine, [install it](https://help.github.com/arti
 
 If you don't have Vscode, [install it](https://code.visualstudio.com/download).
 
-If you don't have a replit account, feel free to create one [here](https://replit.com/signup).
-
 ## Fork this repository
 
-Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
+Fork this repository by clicking on the fork button at the top of this page. This will create a copy of this repository in your account.
 
 ![For this repo](./screenshots/1.jpg)
 
@@ -51,7 +49,7 @@ Firstly, you have to create a personal token. click [here](https://docs.github.c
 
  _Skip to [Import from Github to Replit](#Import-from-Github-to-Replit)]_
 
-Now clone the forked repository to your machine. Go to your Github account and open the forked repository, click on the `code` button then click the _copy to clipboard_ icon as shown below:
+Go to your Github account and open the forked repository, click on the `code` button then click the _copy to clipboard_ icon as shown below:
 
 ![clone this repo](./screenshots/3.jpg)
 ![Copy the url](./screenshots/4.png)
@@ -60,7 +58,7 @@ If successfully copied, you should get this:
 
 ![Successfully copied](./screenshots/5.png)
 
-Open your Vscode click on Terminal section and click `new terminal` to open a terminal in vscode or use `ctrl + f7` as shown below:
+Open your Vscode, click on `Terminal` section and click `new terminal` to open a terminal in Vscode or use `ctrl + f7` as shown below:
 
 ![Vscode Terminal](./screenshots/6.jpg) ![Vscode New terminal](./screenshots/7.jpg)
 
@@ -70,7 +68,7 @@ When it is opened, run the following git commands:
 git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/Rebus-Puzzles_webpage.git
 ```
 
-:bulb: Replace {YOUR_PERSONAL_TOKEN} with the personal access token generated from the first step above. Replace {YOUR_USERNAME} with your github username as shown below.
+:bulb: Replace {YOUR_PERSONAL_TOKEN} with the personal access token generated from the first step above. Replace {YOUR_USERNAME} with your github username as shown in the image below.
 
 :bulb: right-click on the terminal to paste what you just copied.
 
@@ -88,7 +86,7 @@ If done with the creating and set-ups or already created, navigate to the `home`
 
 ![create new repl](./screenshots/10.jpg)
 
-After that, on the section that pops up click on  `import from Github` button which is at the right top corner of the section as shown below:
+On the section that pops up, click on  `import from Github` button which is at the right top corner of the section as shown below:
 
 ![import from github button](./screenshots/11.jpg)
 
@@ -100,17 +98,19 @@ Then input the copied URL into the space labelled 1. in the pic below:
 
 ![Follow up](./screenshots/13.jpg)
 
-If the (2) language detected is `Node.js`, change it to `HTML,CSS & JS` as shown above.
+If the labelled (2) language detected is `Node.js`, change it to `HTML,CSS & JS` as shown above.
 
-Then if you've done these steps above, click on the button labelled (3) `Import from Github`.
-
-Boom!!! You've just imported the cloned repo from Github to Replit :grin:
+Then if you are done with the steps above, click on the button labelled (3) `Import from Github`.
 
 Just wait for some seconds for everything to load onto the screen.
+
+Boom!!! You've just imported the cloned repo from Github to Replit :grin:
 
 ## Make changes
 
 ### On Vscode
+
+  _Skip to [Make changes on Replit](#On-Replit)]_
 
   If terminal is still open, change directory to the new Rebus-Puzzles_webpage, using  this command:
 
@@ -155,11 +155,14 @@ Add your own rebus to it. **Don't add it at the beginning or end of the file. Pu
 
 :bulb: Those commas ',' in the format above are very important.
 
-Note: In your rebus `pattern`, if you want to include emojis. You can get the full list of html emojis at [HTML Emojis](https://www.w3schools.com/charsets/ref_emoji.asp) then use them these ways;
+Note: In your rebus `pattern`,
+-You can add some html tag to design your pattern.
+-You can't add images.
+-If you want to include emojis. You can get the full list of html emojis at [HTML Emojis](https://www.w3schools.com/charsets/ref_emoji.asp) then use them these ways;
 
-- If you are using the `dec code` of your preferred emoji, write the `dec code` in this format into the pattern (`&#the-dec-code`)
+  -- If you are using the `dec code` of your preferred emoji, write the `dec code` in this format into the pattern (`&#the-dec-code`)
 
-- If you feel like using the `hex code`, write it in this format (`&#xthe-hex-code`)
+  -- If you feel like using the `hex code`, write it in this format (`&#xthe-hex-code`)
 
 Examples are provided in the `Rebuses.jsx` file.
 
@@ -169,7 +172,7 @@ Examples are provided in the `Rebuses.jsx` file.
 
   _skip to [Check changes on Replit](#Check-changes-on-Replit)_
 
-If terminal is not open, Open the terminal then change directory to the cloned repo and run this command:
+If terminal is not open, Open the terminal then change directory to the cloned repo and run this command with internet connection:
 
 ```
 npm install
@@ -177,7 +180,7 @@ npm install
 
 ![npm install](./screenshots/20.png)
 
-Wait for the installation to finish. You should get this:
+Wait for the installation to finish. You should get something like this:
 
 ![npm installed](./screenshots/21.png)
 
@@ -193,7 +196,7 @@ then press `alt` on your keyboard and click on the `http://localhost:.../`
 
 ![open the project on your browser](./screenshots/23.png)
 
-This will automatically open your browser and render the result on your screen in the browser tab.
+This will automatically open your browser and render the result on your screen in the browser's tab.
 
 ![project opened](./screenshots/24.jpg)
 
@@ -232,7 +235,7 @@ Then click on the `Webview` button and after some seconds, you will see the webp
 
 :bulb: You can click on the button labelled (2) to view in fullscreen.
 
-Note: If you don't get the result after some minutes, go to the shell and click on the `http://localhost:.../`
+Note: If you don't get the result after some minutes, go to the shell and click on the `http://localhost:.../`.
 
 ## Commit and Push changes to Github
 
@@ -240,7 +243,7 @@ Note: If you don't get the result after some minutes, go to the shell and click 
 
  _skip to [Commit and Push from Replit](#Commit-and-Push-from-Replit)_
 
-- Open a new terminal (ctrl + f7), change directory to the project directory and execute the commands if you haven't done it before:
+- Open a new terminal (ctrl + f7), change directory to the project directory and execute the two commands below, if you haven't done it before:
 
 ```
 git config --global user.email "youremail@example.com"
@@ -260,7 +263,7 @@ example:
 
 ![user name](./screenshots/32.png)
 
-Successfully done? move to the next section below.
+Successful? move to the next section below.
 
 - Execute this command to see the file(s) you made changes in:
 
@@ -270,7 +273,7 @@ git status
 
 ![git status](./screenshots/33.png)
 
-- Add those changes to your branch using the `git add .` command:
+- Add those changes to your git branch using the `git add .` command:
 
 ![git add](./screenshots/34.png)
 
@@ -296,7 +299,7 @@ Boom!!!!! You have successfully pushed the changes to your cloned repo from Vsco
 
 ### Commit and Push from Replit
 
-To commit and push from Replit, follow the images below:
+To commit and push from Replit, follow the images and steps below:
 
 ![version control](./screenshots/37.jpg)
 
@@ -318,7 +321,7 @@ Next, you should see this:
 
 Click on the button labelled `push`
 
-Then, you are done with the pushing if you get this: 
+Then, you are done with the pushing if you get this:
 
 ![Successfully pushed](./screenshots/41.png)
 
@@ -326,35 +329,42 @@ Booyah!!! :grin:
 
 ## Submit your changes for review
 
-Now go back to the cloned repository on your Github account, you'll see a `Contribute` and `Sync fork` buttons as shown below:
+Now go back to the cloned repository on your Github account, you'll see the `Contribute` and `Sync fork` buttons as labelled 2 and 3 in the image below:
 
 ![Update and contribute](./screenshots/42.jpg)
 
-**This is important** - click on the `sync fork` as labelled (3) in the image above first to update your forked repository from the latest commit of the original Rebus-Puzzles_webpage repository because sometimes, you might not notice the labelled (1) but doing this will save you some stress which you will face if not done.
+:bulb: A pull request (PR) is an event that takes place in software development when a contributor/developer is ready to begin the process of merging new code changes with the main project repository.
+
+**This is important** -Before trying to send a PR(Pull Request) always click on the `sync fork` as labelled (3) in the image above because of the following:
+
+1. There might have been some updates on the repository you want to send your PR, which you are notified as labelled (1) in the image above.
+2. The PR you want to send might be for the changes another contributor as made and have been merged.
+
+So checking the updates if any, might save you the stress you should have gone through if not checked.
+
+-Now, update your forked repository from the latest commit of the original Rebus-Puzzles_webpage repository if any update.
 
 ![sync fork](./screenshots/43.jpg)
 
-- After you have gotten the message:
+  -- After you have gotten the message:
 
-![fetched](./screenshots/44.png)
+  ![fetched](./screenshots/44.png)
 
-Then click on the `contribute` button to send a pull request.
+- Then click on the `contribute` button to send a pull request.
 
 ![contribute and send pull request](./screenshots/45.jpg)
 
-:bulb: A pull request is an event that takes place in software development when a contributor/developer is ready to begin the process of merging new code changes with the main project repository.
-
-Now sumbit the pull request.
-
-![Pull request](./screenshots/46.jpg)
-
 Scroll down to see your changes.
 
-for example:
+For example:
 
 ![Changes](./screenshots/47.png)
 
-You can also the preview of your changes by click :
+Now to create the pull request. Input the title of your PR in the field labelled as (1) then click on the button labelled two to finally create your PR as shown below.
+
+![Pull request](./screenshots/46.jpg)
+
+After the sending of the PR, You can also preview your changes by clicking:
 
 ![Preview](./screenshots/48.jpg)
 
@@ -362,7 +372,7 @@ Soon I'll be merging all your changes into the main branch of this project. You 
 
 Thank you for your contribution Champ :trophy: :relaxed:
 
-# Upcoming Features for Rebus
+# Upcoming Features for this Rebus proect
 
 - New UI for desktop view.
 - Warning when hint or get answer button is click with insufficient point.
