@@ -23,6 +23,9 @@
     color: black;
     border-radius: 10px;
 }
+.eachT:first-of-type{
+    margin-top: 0;
+}
 .eachT span{
     width: 90%;
 }
