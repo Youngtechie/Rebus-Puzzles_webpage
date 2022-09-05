@@ -11,7 +11,7 @@ const rebuses = [{
   hint: "A popular name for 'Nitrous Oxide'.",
 },
 {
-  pattern: `<span color="blue">MO</span>1ce<span color="blue">ON</span>`,
+  pattern: `<span style="color: blue;font-weight: 700;">MO</span>1ce<span style="color: blue;font-weight: 700;">ON</span>`,
   answer: `Once in a blue moon`,
   hint: `very rarely.`,
 },
@@ -21,7 +21,7 @@ const rebuses = [{
   hint: `A popular Web browser.`,
 },
 {
-  pattern: `E<h6>C</h6><h5>O</h5><h4>N</h4><h3>O</h3><h2>M</h2><h1>Y</h1>`,
+  pattern: `<h6>E</h6><h6>C</h6><h5>O</h5><h4>N</h4><h4>O</h4><h3>M</h3><h2>Y</h2>`,
   answer: `Growing economy`,
   hint: `The way the letters are becoming bigger matters.`,
 },
