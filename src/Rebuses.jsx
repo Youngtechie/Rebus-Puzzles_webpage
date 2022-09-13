@@ -27,6 +27,11 @@ const rebuses = [{
   hint: `The way the letters are becoming bigger matters.`,
 },
 {
+  pattern: `&#128068 + &#x1F962`,
+  answer: `Lipstick`,
+  hint: `a tool for make-up artistry`,
+},
+{
   pattern: `stan4ce`,
   answer: `For instance`,
   hint: `as an example`,
