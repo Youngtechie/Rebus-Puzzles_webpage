@@ -6,6 +6,12 @@ const rebuses = [{
 },
 //*****************************************************
 // Add your rebuses here
+
+{
+  pattern: `improp + 2`,
+  answer: `impromptu`,
+  hint: `unprepared`,
+},
 {
   pattern: `&#128514 + gas`,
   answer:" laughing gas ",
