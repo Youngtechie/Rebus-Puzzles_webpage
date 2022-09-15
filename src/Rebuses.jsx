@@ -58,6 +58,11 @@ const rebuses = [{
   hint: `as an example`,
 },
 {
+  pattern: `&#127769 + &#128161`,
+  answer: `Moonlight`,
+  hint: `Lights up the night`,
+},
+{
   pattern: `&#128065  &#128151  U`,
   answer:" i love you",
   hint: " An affirmation of affection or deep caring, especially to a family member. ",
@@ -65,7 +70,7 @@ const rebuses = [{
 {
   pattern: '&#128161 + &#127968',
   answer: 'Lighthouse',
-  hint: 'A tower with a light to guide ships at sea'
+  hint: 'A tower with a light to guide ships at sea',
 },
 // ****************************************************
 {
