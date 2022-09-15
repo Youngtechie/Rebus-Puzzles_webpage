@@ -48,9 +48,14 @@ const rebuses = [{
   hint: `as an example`,
 },
 {
-  pattern: `&#128065 + &#128151 + U`,
+  pattern: `&#128065  &#128151  U`,
   answer:" i love you",
   hint: " An affirmation of affection or deep caring, especially to a family member. ",
+},
+{
+  pattern: '&#128161 + &#127968',
+  answer: 'Lighthouse',
+  hint: 'A tower with a light to guide ships at sea'
 },
 // ****************************************************
 {
