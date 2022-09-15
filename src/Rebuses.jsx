@@ -43,6 +43,11 @@ const rebuses = [{
   hint: `Say the two emojis out loud.`,
 },
 {
+  pattern: `&#x1F408 + as + (&#127942 -y + e) `,
+  answer: `Catastrophe`,
+  hint: `A really really bad occurence`,
+},
+{
   pattern: `stan4ce`,
   answer: `For instance`,
   hint: `as an example`,
