@@ -48,6 +48,11 @@ const rebuses = [{
   hint: `A really really bad occurence`,
 },
 {
+  pattern: `&#x1F41D + &#127810`,
+  answer: `Belief`,
+  hint: `Hmm, Say both emojis out loud`,
+},
+{
   pattern: `stan4ce`,
   answer: `For instance`,
   hint: `as an example`,
