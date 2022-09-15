@@ -6,6 +6,12 @@ const rebuses = [{
 },
 //*****************************************************
 // Add your rebuses here
+
+{
+  pattern: `improp + 2`,
+  answer: `impromptu`,
+  hint: `unprepared`,
+},
 {
   pattern: `&#128514 + gas`,
   answer:" laughing gas ",
@@ -25,6 +31,11 @@ const rebuses = [{
   pattern: `<h6>E</h6><h6>C</h6><h5>O</h5><h4>N</h4><h4>O</h4><h3>M</h3><h2>Y</h2>`,
   answer: `Growing economy`,
   hint: `The way the letters are becoming bigger matters.`,
+},
+{
+  pattern: `&#128068 + &#x1F962`,
+  answer: `Lipstick`,
+  hint: `a tool for make-up artistry`,
 },
 {
   pattern: `&#11088 + &#x1F40B`,
