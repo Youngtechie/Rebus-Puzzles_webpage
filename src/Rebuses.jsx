@@ -27,6 +27,11 @@ const rebuses = [{
   hint: `The way the letters are becoming bigger matters.`,
 },
 {
+  pattern: `&#11088 + &#x1F40B`,
+  answer: `Starfish`,
+  hint: `Say the two emojis out loud.`,
+},
+{
   pattern: `stan4ce`,
   answer: `For instance`,
   hint: `as an example`,
