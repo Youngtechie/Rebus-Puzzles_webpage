@@ -62,6 +62,11 @@ const rebuses = [{
   answer: `Moonlight`,
   hint: `Lights up the night`,
 },
+// {
+//   pattern: ``,
+//   answer: ``,
+//   hint: ``,
+// },
 {
   pattern: `&#128065  &#128151  U`,
   answer:" i love you",
