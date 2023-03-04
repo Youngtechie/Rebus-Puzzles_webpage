@@ -68,6 +68,11 @@ const rebuses = [{
 //   hint: ``,
 // },
 {
+  pattern: `Mil1lion`,
+  answer: `1 in a million`,
+  hint: `Make sure you pay attention to the number included in the word.`,
+},
+{
   pattern: `&#128065  &#128151  U`,
   answer:" i love you",
   hint: " An affirmation of affection or deep caring, especially to a family member. ",
