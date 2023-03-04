@@ -68,9 +68,9 @@ const rebuses = [
   //   hint: ``,
   // },
   {
-    pattern: `<p>stand</p><p>I</p>`,
-    answer: ` I understand`,
-    hint: `The placement of each item is important in order to solve this rebus puzzle.`,
+    pattern: `(&#128025 - "Oc" - "us") + secret `,
+    answer: `Top secret`,
+    hint: `An adjective`,
   },
   {
     pattern: `Mil1lion`,
