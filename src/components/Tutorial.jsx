@@ -37,11 +37,6 @@ export default function TutorialPage(){
                     will be added to your points.</span>
             </section>
 
-            <section className='eachT'>
-                <button type="button" className='Tbtn' id='Tbtnreset'> Reset </button>
-                <span><strong>Reset button:</strong> This button will clear the answer and hint of the current rebus.</span>
-            </section>
-
             <button className="Tbtn" id='Tbtnskip' onClick={skip}>Skip</button>
         </section>
     )
