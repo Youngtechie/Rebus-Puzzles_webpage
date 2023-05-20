@@ -18,7 +18,7 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #fff;
     color: black;
     border-radius: 10px;
@@ -46,7 +46,7 @@
     color: #fff;
 }
 #Tbtnskip{
-    margin-top: 20px;
+    margin-top: 40px;
     justify-content: flex-end;
     align-self: flex-end;
 }
