@@ -13,39 +13,37 @@ export default function RebusesContainer() {
   // declarations
   const [counter, setCounter] = useState(1);
   const [page, setPage] = useState(0);
-  const [point, setPoint] = useState(1000);
+  const [pointD, setPointD] = useState(window.localStorage.getItem('Points') || 1000)
   var rebus = rebuses[page].pattern;
   var rebusAnswer = rebuses[page].answer;
   var rebusHint = rebuses[page].hint;
-  const [answered, setAnswered] = useState([]);
-  const [hinted, setHinted] = useState([])
-
-  useEffect(() => {
-    window.localStorage.setItem("Answered", JSON.stringify(answered));
-    window.localStorage.setItem('Hinted', JSON.stringify(hinted))
-  }, [answered, hinted]);
-
-
+  if (window.localStorage.length === 0) {
+    window.localStorage.setItem('Answered', JSON.stringify([]))
+    window.localStorage.setItem('Hinted', JSON.stringify([]))
+    window.localStorage.setItem('Points', pointD)
+  }
+ 
   useEffect(()=>{
     let done = window.localStorage.getItem('Answered')
     let hint = window.localStorage.getItem('Hinted')
-    if (done.includes(rebus)) {
-      document.querySelector(".rebusAns").value = rebusAnswer;
-      document.querySelector(".rebusAns").setAttribute('id', 'rebusAnsD')
-      document.querySelector(".hint p").style.display = "block";
-      document.querySelector(".hint").style.backgroundColor = "#fff";
-      document.querySelector('.btns').style.display = 'none'
-    }
-    else{
-      document.querySelector('.btns').style.display = 'flex'
-      document.querySelector(".rebusAns").removeAttribute('id')
-    }
-
-    if (hint.includes(rebus)) {
-      document.querySelector(".hint p").style.display = "block";
-      document.querySelector(".hint").style.backgroundColor = "#fff";
-    }
+      if (done.includes(page)) {
+        document.querySelector(".rebusAns").value = rebusAnswer;
+        document.querySelector(".rebusAns").setAttribute('id', 'rebusAnsD')
+        document.querySelector(".hint p").style.display = "block";
+        document.querySelector(".hint").style.backgroundColor = "#fff";
+        document.querySelector('.btns').style.display = 'none'
+      }
+      else if (hint.includes(page)) {
+        document.querySelector(".hint p").style.display = "block";
+        document.querySelector(".hint").style.backgroundColor = "#fff";
+      }
+      else{
+        document.querySelector('.btns').style.display = 'flex'
+        document.querySelector(".rebusAns").removeAttribute('id')
+      }
+      
   }, [page])
+
   // function for the render rebus pattern as innerHTML
   function rebusInput() {
     return { __html: rebus };
@@ -106,30 +104,40 @@ export default function RebusesContainer() {
   // function for the hint button
   let hintbtn = (x) => {
     x.preventDefault();
+    let point = localStorage.getItem("Points")
     let hintp = document.querySelector(".hint p").style.display;
     if (point > 49 && hintp == "none") {
-      setPoint((prev) => prev - 50);
-      setHinted(prev => [...prev, rebus])
+      point -= 50
+      window.localStorage.setItem('Points', point)
+      setPointD((p)=> p = point)
+      let hints =JSON.parse(localStorage.getItem('Hinted'))
+      hints.push(page)
+      localStorage.setItem('Hinted', JSON.stringify(hints))
       document.querySelector(".hint p").style.display = "block";
       document.querySelector(".hint").style.backgroundColor = "#fff";
     }
-    else if (point < 49){
-      alert(`You don't have enough points, ${50-point} points is needed`)
-    }
+    // else if (point < 49){
+    //   alert(`You don't have enough points, ${50-point} points is needed`)
+    // }
   };
   //function for the getAnswer button
   let markbtn = (x) => {
     x.preventDefault();
+    let point = localStorage.getItem("Points")
     let rebA = document.querySelector(".rebusAns");
     if (point > 249 && rebA.value != rebusAnswer) {
-      setAnswered((prev) => [...prev, rebus]);
-      setPoint((prev) => prev - 250);
+      point -= 250
+      setPointD((prev) => prev = point);
+      window.localStorage.setItem('Points', point)
       rebA.value = rebusAnswer;
+      let Answereds =JSON.parse(localStorage.getItem('Answered'))
+      Answereds.push(page)
+      localStorage.setItem('Answered', JSON.stringify(Answereds))
       document.querySelector(".hint p").style.display = "block";
       document.querySelector(".hint").style.backgroundColor = "#fff";
       document.querySelector('.btns').style.display = 'none'
       document.querySelector(".rebusAns").setAttribute('id', 'rebusAnsD')
-    }else if (point < 249){
+    }else if (pointD < 249){
       alert(`You don't have enough points, ${250-point} points is needed`)
     }
   };
@@ -151,7 +159,16 @@ export default function RebusesContainer() {
       resultP.innerHTML =
         "You are great Champ!! &#128525; <br/><br/> Continue &#9889; ";
       resultImg.setAttribute("src", "/images/correct.png");
-      setPoint((prev) => prev + 200);
+      
+      let point = Number(localStorage.getItem("Points"))
+      point = point + 200
+      setPointD((prev) => prev = point);
+      window.localStorage.setItem('Points', point)
+
+      let Answereds =JSON.parse(localStorage.getItem('Answered'))
+      Answereds.push(page)
+      localStorage.setItem('Answered', JSON.stringify(Answereds))
+
       if (counter < rebuses.length) {
         setCounter((prev) => prev + 1);
         setPage((prev) => prev + 1);
@@ -198,7 +215,7 @@ export default function RebusesContainer() {
       </header>
 
       <section className="rebusSetup">
-        <section className="point">Your point is : {point}</section>
+        <section className="point">Your point is : {pointD}</section>
 
         <section className="QnA">
           <section className="pages">
