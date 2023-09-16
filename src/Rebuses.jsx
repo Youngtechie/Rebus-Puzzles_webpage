@@ -62,31 +62,7 @@ const rebuses = [
     answer: `Moonlight`,
     hint: `Lights up the night`,
   },
-  {
-    pattern: `&#128029; + &#127754; + &#128197;`,
-    answer: `Busy day`,
-    hint: `It describes a day with a lot of activities.`,
-  },
-  {
-    pattern: `&#9728; + &#128197;`,
-    answer: `Sunday`,
-    hint: `A day of the week.`,
-  },
-  {
-    pattern: `&#128065; &#10084; &#128218;`,
-    answer: `I love reading`,
-    hint: `It expresses a passion for a particular activity.`,
-  },
-  {
-    pattern: `&#129504; + (sto + (&#129315; - a))`,
-    answer: `Brainstorm`,
-    hint: `It's a creative thinking process.`,
-  },
-  {
-    pattern: `&#9728; & &#127769;`,
-    answer: `Day and night`,
-    hint: `It describes the cycle of time.`,
-  },
+  
   // {
   //   pattern: ``,
   //   answer: ``,
@@ -117,6 +93,31 @@ const rebuses = [
     pattern: `<h5><sup>Travel</sup></h5> <h2>/</h2> <h5><sub>ccccc</sub></h6> `,
     answer: " Travel Oversea",
     hint: " Beyond the boundaries of one's country ",
+  },
+  {
+    pattern: `&#128029; + &#127754; + &#128197;`,
+    answer: `Busy day`,
+    hint: `It describes a day with a lot of activities.`,
+  },
+  {
+    pattern: `&#9728; + &#128197;`,
+    answer: `Sunday`,
+    hint: `A day of the week.`,
+  },
+  {
+    pattern: `&#128065; &#10084; &#128218;`,
+    answer: `I love reading`,
+    hint: `It expresses a passion for a particular activity.`,
+  },
+  {
+    pattern: `&#129504; + (sto + (&#129315; - a))`,
+    answer: `Brainstorm`,
+    hint: `It's a creative thinking process.`,
+  },
+  {
+    pattern: `&#9728; & &#127769;`,
+    answer: `Day and night`,
+    hint: `It describes the cycle of time.`,
   },
 ];
 
