@@ -23,7 +23,7 @@ export default function TutorialPage(){
 
             <section className='eachT'>
                 <img src="/images/arrow.png" className='Tprev'/>
-                <span><strong>Prevous button:</strong> This button take you -1 rebus to the current rebus.</span>
+                <span><strong>Previous button:</strong> This button take you -1 rebus to the current rebus.</span>
             </section>
 
             <section className='eachT'>
