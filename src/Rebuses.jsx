@@ -110,7 +110,7 @@ const rebuses = [
     hint: `It expresses a passion for a particular activity.`,
   },
   {
-    pattern: `&#129504; + (sto + (&#129315; - a))`,
+    pattern: `&#129504; + (sto + (&#128170; - a))`,
     answer: `Brainstorm`,
     hint: `It's a creative thinking process.`,
   },
