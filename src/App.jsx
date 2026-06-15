@@ -1,14 +1,6 @@
 import './App.css'
-import TutorialPage from './components/Tutorial'
-import RebusesContainer from './components/rebus_container'
-import Result from './components/result.jsx'
+import RebusGame from './components/RebusGame'
 
 export default function App() {
-  return (
-   <>
-   <TutorialPage/>
-   <RebusesContainer />
-   <Result />
-   </>
-  )
+  return <RebusGame />
 }
