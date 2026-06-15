@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "framer-motion": "^12.40.0",
     "src": "^1.1.2"
   },
   "devDependencies": {
